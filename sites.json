@@ -54,9 +54,64 @@
             "host": "www.codeandtalk.com",
             "ips": ["173.255.196.65"]
         },
-
         {
             "host": "mail.codeandtalk.com",
+            "ips": ["50.116.59.34"]
+        },
+
+
+        {
+            "host": "cpanforum.com",
+            "ips": ["50.116.59.34"]
+        },
+        {
+            "host": "www.cpanforum.com",
+            "ips": ["50.116.59.34"]
+        },
+        {
+            "host": "mail.cpanforum.com",
+            "ips": ["50.116.59.34"]
+        },
+
+
+        {
+            "host": "filmmakerplus.com",
+            "ips": ["176.58.105.26"]
+        },
+        {
+            "host": "www.filmmakerplus.com",
+            "ips": ["176.58.105.26"]
+        },
+        {
+            "host": "mail.filmmakerplus.com",
+            "ips": ["50.116.59.34"]
+        },
+
+
+        {
+            "host": "hostlocal.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "www.hostlocal.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "s7.hostlocal.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "s8.hostlocal.com",
+            "ips": ["50.116.59.34"]
+        },
+
+        {
+            "host": "s9.hostlocal.com",
+            "ips": ["176.58.105.26"]
+        },
+
+        {
+            "host": "mail.hostlocal.com",
             "ips": ["50.116.59.34"]
         },
 
