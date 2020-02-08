@@ -11,7 +11,10 @@ def main():
         print(site["url"])
         resp = requests.get(site["url"])
         if resp.status_code != site["status_code"]:
-            errors.append('URL {site["url"]} expected {site["status_code"]} received {resp.status_code}')
+            errors.append(f'URL {site["url"]} expected {site["status_code"]} received {resp.status_code}')
+        if 'html_contains' in site:
+            if site['html_contains'] not in resp.content.decode('utf-8'):
+                errors.append(f'URL {site["url"]} expected some html_content but did not receive it')
 
     if errors:
         for error in errors:

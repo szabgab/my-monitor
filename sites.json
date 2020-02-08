@@ -2,6 +2,11 @@
     "sites": [
         {
             "url": "https://code-maven.com/",
+            "status_code": 200,
+            "html_contains": "Welcome to the Code Maven!"
+        },
+        {
+            "url": "https://he.code-maven.com/",
             "status_code": 200
         }
     ]
