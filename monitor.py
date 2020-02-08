@@ -15,6 +15,7 @@ def setup_logger():
 
 def main():
     logger = setup_logger()
+    start_process = time.time()
 
     errors = []
     filename = 'sites.json'
@@ -47,12 +48,17 @@ def main():
             if site['html_contains'] not in resp.content.decode('utf-8'):
                 errors.append(f'URL {url} expected some html_content but did not receive it')
 
+    end_process = time.time()
+
     if errors:
         for error in errors:
             logger.error(error)
-        exit(1)
+        code = 1
     else:
         logger.info("Everything is fine")
-        exit(0)
+        code = 0
+    logger.info(f"Elapsed time: {end_process - start_process}")
+    exit(code)
+
 if __name__ == '__main__':
     main()

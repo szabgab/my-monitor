@@ -74,6 +74,29 @@
             "headers": {
                 "Location": "http://filmmakerplus.com/"
             }
+        },
+
+        {
+            "url": "http://lael.co.il/",
+            "status_code": 200,
+            "html_contains": "<a href=\"http://shay.lael.co.il/\">Shay Lael Advocat</a>"
+        },
+        {
+            "url": "http://shay.lael.co.il/",
+            "status_code": 200,
+            "html_contains": "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
+        },
+        {
+            "url": "http://perl.co.il/",
+            "status_code": 200,
+            "html_contains": "<title>Israel.pm - Perl in Israel</title>"
+        },
+        {
+            "url": "http://www.perl.org.il/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://perl.org.il/"
+            }
         }
     ]
 }
