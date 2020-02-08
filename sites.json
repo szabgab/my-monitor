@@ -1,23 +1,14 @@
 {
     "sites": [
         {
-            "url": "https://code-maven.com/",
-            "status_code": 200,
-            "html_contains": "Welcome to the Code Maven!"
-        },
-        {
-            "url": "https://he.code-maven.com/",
-            "status_code": 200
-        },
-        {
+            "url": "https://bailador.net/",
             "enabled": false,
             "comment": "TODO: need to configure the https server and make it redirect",
-            "url": "https://bailador.net/",
             "status_code": 301
         },
         {
-            "enabled": false,
             "url": "http://bailador.net/",
+            "enabled": false,
             "status_code": 301,
             "headers": {
                 "Location": "http://code-maven.com/"
@@ -29,6 +20,34 @@
             "headers": {
                 "Location": "http://code-maven.com/"
             }
+        },
+        {
+            "url": "https://code-maven.com/",
+            "status_code": 200,
+            "html_contains": "Welcome to the Code Maven!"
+        },
+        {
+            "url": "https://he.code-maven.com/",
+            "status_code": 200
+        },
+        {
+            "url": "https://codeandtalk.com/",
+            "status_code": 200,
+            "html_contains": "Presentations from tech events worth watching"
+        },
+        {
+            "url": "http://www.codeandtalk.com/",
+            "status_code": 301,
+            "headers": {
+                "Location": "https://codeandtalk.com/"
+            }
+        },
+        {
+            "url": "https://www.codeandtalk.com/",
+            "enabled": false,
+            "comment": "ssh error",
+            "status_code": 200,
+            "html_contains": "Presentations from tech events worth watching"
         }
-     ]
+    ]
 }
