@@ -1,6 +1,67 @@
 {
     "sites": [
         {
+            "host": "bailador.net",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "www.bailador.net",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "mail.bailador.net",
+            "ips": ["50.116.59.34"]
+        },
+
+        {
+            "host": "code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "www.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "hu.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "he.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "ru.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "es.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "meta.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "mail.code-maven.com",
+            "ips": ["50.116.59.34"]
+        },
+
+        {
+            "host": "codeandtalk.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "www.codeandtalk.com",
+            "ips": ["173.255.196.65"]
+        },
+
+        {
+            "host": "mail.codeandtalk.com",
+            "ips": ["50.116.59.34"]
+        },
+
+
+        {
             "url": "https://bailador.net/",
             "enabled": false,
             "comment": "TODO: need to configure the https server and make it redirect",

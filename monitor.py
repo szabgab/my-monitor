@@ -19,7 +19,8 @@ class Monitor:
         self.errors = []
         self.logger = setup_logger()
 
-    def error(self, text):
+    def save_error(self, text):
+        self.logger.error(text)
         self.errors.append(text)
 
 
@@ -27,9 +28,13 @@ class Monitor:
         host = site['host']
         self.logger.info(f"Host: {host}")
 
-        data = socket.gethostbyname_ex(host)
-        self.logger.info(data)
-
+        try:
+            hostname, aliaslist, ip_addresses = socket.gethostbyname_ex(host)
+            self.logger.info(f"hostname: {hostname} ip_addresses={ip_addresses}")
+            if ip_addresses != site["ips"]:
+                self.save_error(f"Host {host} Expected IPS: {site['ips']}  received: {ip_addresses}")
+        except Exception as err:
+            self.save_error(f"Host {host} Expection {err} of type {err.__class__.__name__} received")
 
     def check_url(self, site):
         url = site["url"]
@@ -45,7 +50,7 @@ class Monitor:
         logger.info(f"headers: {resp.headers}")
         logger.info(f"elaspsed time: {end - start}")
         if resp.status_code != site["status_code"]:
-            self.save_error.append(f'URL {url} expected {site["status_code"]} received {resp.status_code}')
+            self.save_error(f'URL {url} expected {site["status_code"]} received {resp.status_code}')
 
         if 'headers' in site:
             for header in site["headers"]:
