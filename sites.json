@@ -8,6 +8,27 @@
         {
             "url": "https://he.code-maven.com/",
             "status_code": 200
+        },
+        {
+            "enabled": false,
+            "comment": "TODO: need to configure the https server and make it redirect",
+            "url": "https://bailador.net/",
+            "status_code": 301
+        },
+        {
+            "enabled": false,
+            "url": "http://bailador.net/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://code-maven.com/"
+            }
+        },
+        {
+            "url": "http://www.bailador.net/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://code-maven.com/"
+            }
         }
-    ]
+     ]
 }
