@@ -2,7 +2,7 @@
     "sites": [
         {
             "url": "https://code-maven.com/",
-            "verify": 200
+            "status_code": 200
         }
     ]
 }
