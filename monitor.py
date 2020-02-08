@@ -2,6 +2,7 @@ import requests
 import json
 import logging
 import time
+import socket
 
 def setup_logger():
     logger = logging.getLogger(__name__)
@@ -13,19 +14,29 @@ def setup_logger():
     logger.addHandler(sh)
     return logger
 
-def main():
-    logger = setup_logger()
-    start_process = time.time()
+class Monitor:
+    def __init__(self):
+        self.errors = []
+        self.logger = setup_logger()
 
-    errors = []
-    filename = 'sites.json'
-    with open(filename) as fh:
-        config = json.load(fh)
-    for site in config["sites"]:
+    def error(self, text):
+        self.errors.append(text)
+
+
+    def check_host(self, site):
+        host = site['host']
+        self.logger.info(f"Host: {host}")
+
+        data = socket.gethostbyname_ex(host)
+        self.logger.info(data)
+
+
+    def check_url(self, site):
         url = site["url"]
+        logger = self.logger
         logger.info(f"URL: {url}")
         if 'enabled' in site and not site['enabled']:
-            continue
+            return
 
         start = time.time()
         resp = requests.get(url, allow_redirects=False)
@@ -34,31 +45,46 @@ def main():
         logger.info(f"headers: {resp.headers}")
         logger.info(f"elaspsed time: {end - start}")
         if resp.status_code != site["status_code"]:
-            errors.append(f'URL {url} expected {site["status_code"]} received {resp.status_code}')
+            self.save_error.append(f'URL {url} expected {site["status_code"]} received {resp.status_code}')
 
         if 'headers' in site:
             for header in site["headers"]:
                 if header in resp.headers:
                     if site["headers"][header] != resp.headers[header]:
-                        errors.append(f'URL {url} is expected to have header {header}={site["headers"][header]} but it is {resp.headers[header]}')
+                        self.save_error(
+                            f'URL {url} is expected to have header {header}={site["headers"][header]} but it is {resp.headers[header]}')
                 else:
-                    errors.append(f'URL {url} is expected to have a header "{header}" but it is missing')
+                    self.save_error(f'URL {url} is expected to have a header "{header}" but it is missing')
 
         if 'html_contains' in site:
             if site['html_contains'] not in resp.content.decode('utf-8'):
-                errors.append(f'URL {url} expected some html_content but did not receive it')
+                self.save_error(f'URL {url} expected some html_content but did not receive it')
 
-    end_process = time.time()
+    def main(self):
+        start_process = time.time()
 
-    if errors:
-        for error in errors:
-            logger.error(error)
-        code = 1
-    else:
-        logger.info("Everything is fine")
-        code = 0
-    logger.info(f"Elapsed time: {end_process - start_process}")
-    exit(code)
+        filename = 'sites.json'
+        with open(filename) as fh:
+            config = json.load(fh)
+        for site in config["sites"]:
+            if 'host' in site:
+                self.check_host(site)
+            if 'url' in site:
+                self.check_url(site)
+
+        end_process = time.time()
+
+        if self.errors:
+            for error in self.errors:
+                self.logger.error(error)
+            code = 1
+        else:
+            self.logger.info("Everything is fine")
+            code = 0
+        self.logger.info(f"Elapsed time: {end_process - start_process}")
+        return code
+
 
 if __name__ == '__main__':
-    main()
+    code = Monitor().main()
+    exit(code)
