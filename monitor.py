@@ -1,21 +1,34 @@
 import requests
 import json
+import logging
 
+
+def setup_logger():
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logging.DEBUG)
+
+    sh = logging.StreamHandler()
+    sh.setLevel(logging.DEBUG)
+    sh.setFormatter(logging.Formatter('%(asctime)s - %(levelname)-10s - %(message)s'))
+    logger.addHandler(sh)
+    return logger
 
 def main():
+    logger = setup_logger()
+
     errors = []
     filename = 'sites.json'
     with open(filename) as fh:
         config = json.load(fh)
     for site in config["sites"]:
         url = site["url"]
-        print(url)
+        logger.info(f"URL: {url}")
         if 'enabled' in site and not site['enabled']:
             continue
 
         resp = requests.get(url, allow_redirects=False)
-        print(resp.status_code)
-        print(resp.headers)
+        logger.info(f"status_code: {resp.status_code}")
+        logger.info(f"headers: {resp.headers}")
         if resp.status_code != site["status_code"]:
             errors.append(f'URL {url} expected {site["status_code"]} received {resp.status_code}')
 
@@ -33,10 +46,10 @@ def main():
 
     if errors:
         for error in errors:
-            print(error)
+            logger.error(error)
         exit(1)
     else:
-        print("Everything is fine")
+        logger.info("Everything is fine")
         exit(0)
 if __name__ == '__main__':
     main()
