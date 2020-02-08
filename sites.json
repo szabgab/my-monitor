@@ -86,8 +86,10 @@
             "status_code": 200,
             "html_contains": "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
         },
+
+
         {
-            "url": "http://perl.co.il/",
+            "url": "http://perl.org.il/",
             "status_code": 200,
             "html_contains": "<title>Israel.pm - Perl in Israel</title>"
         },
@@ -96,6 +98,38 @@
             "status_code": 301,
             "headers": {
                 "Location": "http://perl.org.il/"
+            }
+        },
+        {
+            "url": "http://act.perl.org.il/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://act.perl.org.il/ilpw2013/"
+            }
+        },
+        {
+            "url": "http://act.perl.org.il/ilpw2013/",
+            "status_code": 200,
+            "html_contains": "Perl Workshop in Israel, 2013"
+        },
+        {
+            "url": "http://mail.perl.org.il/",
+            "status_code": 301,
+            "headers": {
+                "Location": "https://mail.perl.org.il/"
+            }
+        },
+
+        {
+            "url": "http://pti.co.il/",
+            "status_code": 200,
+            "html_contains": "Python, Perl, and Linux Training Israel (PTI)"
+        },
+        {
+            "url": "http://www.pti.co.il/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://pti.co.il/"
             }
         }
     ]
