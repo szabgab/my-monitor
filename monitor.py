@@ -3,6 +3,7 @@ import json
 import logging
 import time
 import socket
+import glob
 
 def setup_logger():
     logger = logging.getLogger(__name__)
@@ -68,14 +69,15 @@ class Monitor:
     def main(self):
         start_process = time.time()
 
-        filename = 'sites.json'
-        with open(filename) as fh:
-            config = json.load(fh)
-        for site in config["sites"]:
-            if 'host' in site:
-                self.check_host(site)
-            if 'url' in site:
-                self.check_url(site)
+        filenames = glob.glob('*.json')
+        for filename in filenames:
+            with open(filename) as fh:
+                config = json.load(fh)
+            for site in config["sites"]:
+                if 'host' in site:
+                    self.check_host(site)
+                if 'url' in site:
+                    self.check_url(site)
 
         end_process = time.time()
 

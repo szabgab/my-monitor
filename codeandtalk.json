@@ -1,0 +1,36 @@
+{
+  "sites": [
+
+        {
+            "host": "codeandtalk.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "www.codeandtalk.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "mail.codeandtalk.com",
+            "ips": ["50.116.59.34"]
+        },
+        {
+            "url": "https://codeandtalk.com/",
+            "status_code": 200,
+            "html_contains": "Presentations from tech events worth watching"
+        },
+        {
+            "url": "http://www.codeandtalk.com/",
+            "status_code": 301,
+            "headers": {
+                "Location": "https://codeandtalk.com/"
+            }
+        },
+        {
+            "url": "https://www.codeandtalk.com/",
+            "enabled": false,
+            "comment": "ssh error",
+            "status_code": 200,
+            "html_contains": "Presentations from tech events worth watching"
+        }
+  ]
+}

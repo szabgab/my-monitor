@@ -1,0 +1,43 @@
+{
+  "sites": [
+    {
+      "host": "bailador.net",
+      "ips": [
+        "173.255.196.65"
+      ]
+    },
+    {
+      "host": "www.bailador.net",
+      "ips": [
+        "173.255.196.65"
+      ]
+    },
+    {
+      "host": "mail.bailador.net",
+      "ips": [
+        "50.116.59.34"
+      ]
+    },
+    {
+      "url": "https://bailador.net/",
+      "enabled": false,
+      "comment": "TODO: need to configure the https server and make it redirect",
+      "status_code": 301
+    },
+    {
+      "url": "http://bailador.net/",
+      "enabled": false,
+      "status_code": 301,
+      "headers": {
+        "Location": "http://code-maven.com/"
+      }
+    },
+    {
+      "url": "http://www.bailador.net/",
+      "status_code": 301,
+      "headers": {
+        "Location": "http://code-maven.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "sites": [
+        {
+            "host": "cpanforum.com",
+            "ips": ["50.116.59.34"]
+        },
+        {
+            "host": "www.cpanforum.com",
+            "ips": ["50.116.59.34"]
+        },
+        {
+            "host": "mail.cpanforum.com",
+            "ips": ["50.116.59.34"]
+        },
+        {
+            "url": "http://cpanforum.com/",
+            "status_code": 302,
+            "headers": {
+                "Location": "http://perlmaven.com/"
+            }
+        },
+        {
+            "url": "http://www.cpanforum.com/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://cpanforum.com/"
+            }
+        }
+  ]
+}

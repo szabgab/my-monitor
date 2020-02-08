@@ -1,0 +1,45 @@
+{
+  "sites": [
+        {
+            "host": "code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "www.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "hu.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "he.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "ru.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "es.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "meta.code-maven.com",
+            "ips": ["173.255.196.65"]
+        },
+        {
+            "host": "mail.code-maven.com",
+            "ips": ["50.116.59.34"]
+        },
+        {
+            "url": "https://code-maven.com/",
+            "status_code": 200,
+            "html_contains": "Welcome to the Code Maven!"
+        },
+        {
+            "url": "https://he.code-maven.com/",
+            "status_code": 200
+        }
+  ]
+}
