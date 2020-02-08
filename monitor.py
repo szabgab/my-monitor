@@ -1,7 +1,7 @@
 import requests
 import json
 import logging
-
+import time
 
 def setup_logger():
     logger = logging.getLogger(__name__)
@@ -26,9 +26,12 @@ def main():
         if 'enabled' in site and not site['enabled']:
             continue
 
+        start = time.time()
         resp = requests.get(url, allow_redirects=False)
+        end = time.time()
         logger.info(f"status_code: {resp.status_code}")
         logger.info(f"headers: {resp.headers}")
+        logger.info(f"elaspsed time: {end - start}")
         if resp.status_code != site["status_code"]:
             errors.append(f'URL {url} expected {site["status_code"]} received {resp.status_code}')
 
@@ -36,7 +39,7 @@ def main():
             for header in site["headers"]:
                 if header in resp.headers:
                     if site["headers"][header] != resp.headers[header]:
-                        errors.append('URL {url} is expected to have header {header}={site["headers"][header]} but it is {resp.header[header]}')
+                        errors.append(f'URL {url} is expected to have header {header}={site["headers"][header]} but it is {resp.headers[header]}')
                 else:
                     errors.append(f'URL {url} is expected to have a header "{header}" but it is missing')
 

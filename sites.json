@@ -48,6 +48,32 @@
             "comment": "ssh error",
             "status_code": 200,
             "html_contains": "Presentations from tech events worth watching"
+        },
+        {
+            "url": "http://cpanforum.com/",
+            "status_code": 302,
+            "headers": {
+                "Location": "http://perlmaven.com/"
+            }
+        },
+        {
+            "url": "http://www.cpanforum.com/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://cpanforum.com/"
+            }
+        },
+        {
+            "url": "http://filmmakerplus.com/",
+            "status_code": 200,
+            "html_contains": "He Wasn't Always Like This"
+        },
+        {
+            "url": "http://www.filmmakerplus.com/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://filmmakerplus.com/"
+            }
         }
     ]
 }
