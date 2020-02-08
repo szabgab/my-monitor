@@ -1,36 +1,41 @@
 {
-  "sites": [
-
+    "sites": [
         {
             "host": "codeandtalk.com",
-            "ips": ["173.255.196.65"]
+            "ips": [
+                "173.255.196.65"
+            ]
         },
         {
             "host": "www.codeandtalk.com",
-            "ips": ["173.255.196.65"]
+            "ips": [
+                "173.255.196.65"
+            ]
         },
         {
             "host": "mail.codeandtalk.com",
-            "ips": ["50.116.59.34"]
+            "ips": [
+                "50.116.59.34"
+            ]
         },
         {
-            "url": "https://codeandtalk.com/",
+            "html_contains": "Presentations from tech events worth watching",
             "status_code": 200,
-            "html_contains": "Presentations from tech events worth watching"
+            "url": "https://codeandtalk.com/"
         },
         {
-            "url": "http://www.codeandtalk.com/",
-            "status_code": 301,
             "headers": {
                 "Location": "https://codeandtalk.com/"
-            }
+            },
+            "status_code": 301,
+            "url": "http://www.codeandtalk.com/"
         },
         {
-            "url": "https://www.codeandtalk.com/",
-            "enabled": false,
             "comment": "ssh error",
+            "enabled": false,
+            "html_contains": "Presentations from tech events worth watching",
             "status_code": 200,
-            "html_contains": "Presentations from tech events worth watching"
+            "url": "https://www.codeandtalk.com/"
         }
-  ]
+    ]
 }

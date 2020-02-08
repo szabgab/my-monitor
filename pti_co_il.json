@@ -1,16 +1,16 @@
 {
     "sites": [
         {
-            "url": "http://pti.co.il/",
+            "html_contains": "Python, Perl, and Linux Training Israel (PTI)",
             "status_code": 200,
-            "html_contains": "Python, Perl, and Linux Training Israel (PTI)"
+            "url": "http://pti.co.il/"
         },
         {
-            "url": "http://www.pti.co.il/",
-            "status_code": 301,
             "headers": {
                 "Location": "http://pti.co.il/"
-            }
+            },
+            "status_code": 301,
+            "url": "http://www.pti.co.il/"
         }
     ]
 }

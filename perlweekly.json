@@ -1,16 +1,16 @@
 {
-  "sites": [
+    "sites": [
         {
-            "url": "http://perlweekly.com/",
+            "html_contains": "<title>Perl Weekly: A Free, Weekly Email Newsletter for the Perl Programming language</title>",
             "status_code": 200,
-            "html_contains": "<title>Perl Weekly: A Free, Weekly Email Newsletter for the Perl Programming language</title>"
+            "url": "http://perlweekly.com/"
         },
         {
-            "url": "http://www.perlweekly.com/",
-            "status_code": 301,
             "headers": {
                 "Location": "http://perlweekly.com/"
-            }
+            },
+            "status_code": 301,
+            "url": "http://www.perlweekly.com/"
         }
-  ]
+    ]
 }

@@ -1,16 +1,16 @@
 {
-  "sites": [
+    "sites": [
         {
-            "url": "https://pydigger.com/",
+            "html_contains": "<title>PyDigger - unearthing stuff about Python</title>",
             "status_code": 200,
-            "html_contains": "<title>PyDigger - unearthing stuff about Python</title>"
+            "url": "https://pydigger.com/"
         },
         {
-            "url": "http://www.pydigger.com/",
-            "status_code": 301,
             "headers": {
                 "Location": "https://pydigger.com/"
-            }
+            },
+            "status_code": 301,
+            "url": "http://www.pydigger.com/"
         }
-  ]
+    ]
 }

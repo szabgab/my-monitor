@@ -1,28 +1,34 @@
 {
-  "sites": [
+    "sites": [
         {
             "host": "filmmakerplus.com",
-            "ips": ["176.58.105.26"]
+            "ips": [
+                "176.58.105.26"
+            ]
         },
         {
             "host": "www.filmmakerplus.com",
-            "ips": ["176.58.105.26"]
+            "ips": [
+                "176.58.105.26"
+            ]
         },
         {
             "host": "mail.filmmakerplus.com",
-            "ips": ["50.116.59.34"]
+            "ips": [
+                "50.116.59.34"
+            ]
         },
         {
-            "url": "http://filmmakerplus.com/",
+            "html_contains": "He Wasn't Always Like This",
             "status_code": 200,
-            "html_contains": "He Wasn't Always Like This"
+            "url": "http://filmmakerplus.com/"
         },
         {
-            "url": "http://www.filmmakerplus.com/",
-            "status_code": 301,
             "headers": {
                 "Location": "http://filmmakerplus.com/"
-            }
+            },
+            "status_code": 301,
+            "url": "http://www.filmmakerplus.com/"
         }
-  ]
+    ]
 }
