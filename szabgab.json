@@ -1,0 +1,24 @@
+{
+  "sites": [
+    {
+      "url": "http://szabgab.com/",
+      "status_code": 301,
+      "headers": {
+        "Location": "https://szabgab.com/"
+      }
+    },
+    {
+      "url": "https://szabgab.com/",
+      "enabled": true,
+      "status_code": 200,
+      "html_contains": "<title>Gabor Szabo - Test Automation, CI/CD, and DevOps Consultant</title>"
+    },
+    {
+      "url": "http://www.szabgab.com/",
+      "status_code": 301,
+      "headers": {
+        "Location": "http://szabgab.com/"
+      }
+    }
+  ]
+}

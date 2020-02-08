@@ -1,0 +1,14 @@
+{
+  "sites": [
+        {
+            "url": "http://lael.co.il/",
+            "status_code": 200,
+            "html_contains": "<a href=\"http://shay.lael.co.il/\">Shay Lael Advocat</a>"
+        },
+        {
+            "url": "http://shay.lael.co.il/",
+            "status_code": 200,
+            "html_contains": "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
+        }
+  ]
+}

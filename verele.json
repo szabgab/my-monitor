@@ -1,0 +1,22 @@
+{
+  "sites": [
+        {
+            "url": "http://verele.com/",
+            "status_code": 200,
+            "html_contains": "<title>Yiddish &amp; Yoga in Yerushalayim</title>"
+        },
+        {
+            "url": "https://verele.com/",
+            "enabled": false,
+            "status_code": 200,
+            "html_contains": "<title>Yiddish &amp; Yoga in Yerushalayim</title>"
+        },
+        {
+            "url": "http://www.verele.com/",
+            "status_code": 301,
+            "headers": {
+                "Location": "http://verele.com/"
+            }
+        }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "sites": [
+    {
+      "host": "hostlocal.com",
+      "ips": [
+        "173.255.196.65"
+      ]
+    },
+    {
+      "host": "www.hostlocal.com",
+      "ips": [
+        "173.255.196.65"
+      ]
+    },
+    {
+      "host": "s7.hostlocal.com",
+      "ips": [
+        "173.255.196.65"
+      ]
+    },
+    {
+      "host": "s8.hostlocal.com",
+      "ips": [
+        "50.116.59.34"
+      ]
+    },
+    {
+      "host": "s9.hostlocal.com",
+      "ips": [
+        "176.58.105.26"
+      ]
+    },
+    {
+      "host": "mail.hostlocal.com",
+      "ips": [
+        "50.116.59.34"
+      ]
+    }
+  ]
+}
