@@ -4,6 +4,7 @@ import logging
 import time
 import socket
 import glob
+import sys
 
 def setup_logger():
     logger = logging.getLogger(__name__)
@@ -69,7 +70,10 @@ class Monitor:
     def main(self):
         start_process = time.time()
 
-        filenames = glob.glob('*.json')
+        if len(sys.argv) > 1:
+            filenames = sys.argv[1:]
+        else:
+            filenames = glob.glob('*.json')
         for filename in filenames:
             with open(filename) as fh:
                 config = json.load(fh)
