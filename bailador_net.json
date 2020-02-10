@@ -25,16 +25,15 @@
             "url": "https://bailador.net/"
         },
         {
-            "enabled": false,
             "headers": {
-                "Location": "http://code-maven.com/"
+                "Location": "https://code-maven.com/bailador"
             },
             "status_code": 301,
             "url": "http://bailador.net/"
         },
         {
             "headers": {
-                "Location": "http://code-maven.com/"
+                "Location": "https://code-maven.com/bailador"
             },
             "status_code": 301,
             "url": "http://www.bailador.net/"
