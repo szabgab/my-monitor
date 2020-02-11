@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import requests
 import json
 import logging
@@ -46,11 +47,17 @@ class Monitor:
             return
 
         start = time.time()
-        resp = requests.get(url, allow_redirects=False)
-        end = time.time()
+        try:
+            resp = requests.get(url, allow_redirects=False)
+        except Exception as err:
+            self.save_error(f'URL {url} got an exception {err}')
+            return
+        finally:
+            end = time.time()
+            logger.info(f"elaspsed time: {end - start}")
+
         logger.info(f"status_code: {resp.status_code}")
         logger.info(f"headers: {resp.headers}")
-        logger.info(f"elaspsed time: {end - start}")
         if resp.status_code != site["status_code"]:
             self.save_error(f'URL {url} expected {site["status_code"]} received {resp.status_code}')
 
