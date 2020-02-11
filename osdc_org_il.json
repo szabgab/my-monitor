@@ -1,0 +1,40 @@
+{
+    "sites": [
+        {
+            "html_contains": "<title>Israel.pm - Perl in Israel</title>",
+            "status_code": 200,
+            "url": "http://osdc.org.il/",
+            "enabled": false,
+            "comment": "but this should work"
+        },
+        {
+            "headers": {
+                "Location": "http://osdc.org.il/"
+            },
+            "status_code": 301,
+            "url": "http://www.osdc.org.il/"
+        },
+        {
+            "headers": {
+                "Location": "http://act.osdc.org.il/ilpw2013/"
+            },
+            "status_code": 301,
+            "enabled": false,
+            "url": "http://act.osdc.org.il/"
+        },
+        {
+            "html_contains": "Perl Workshop in Israel, 2013",
+            "status_code": 200,
+            "enabled": false,
+            "url": "http://act.osdc.org.il/ilpw2013/"
+        },
+        {
+            "headers": {
+                "Location": "https://mail.osdc.org.il/"
+            },
+            "status_code": 301,
+            "enabled": false,
+            "url": "http://mail.osdc.org.il/"
+        }
+    ]
+}
