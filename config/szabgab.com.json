@@ -1,6 +1,24 @@
 {
     "sites": [
         {
+            "host": "szabgab.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "www.szabgab.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "find-me-more-like.szabgab.com",
+            "ips": [
+                "104.248.229.11"
+            ]
+        },
+        {
             "headers": {
                 "Location": "https://szabgab.com/"
             },
@@ -19,6 +37,12 @@
             },
             "status_code": 301,
             "url": "http://www.szabgab.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Some of my work can be found here: | Ariel Szabo</title>",
+            "status_code": 200,
+            "url": "https://ariel.szabgab.com/"
         }
     ]
 }
