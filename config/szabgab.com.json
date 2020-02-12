@@ -43,6 +43,12 @@
             "html_contains": "<title>Some of my work can be found here: | Ariel Szabo</title>",
             "status_code": 200,
             "url": "https://ariel.szabgab.com/"
+        },
+        {
+            "ips": [
+                "mail.hostlocal.com."
+            ],
+            "mx": "szabgab.com"
         }
     ]
 }

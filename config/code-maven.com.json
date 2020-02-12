@@ -1,6 +1,12 @@
 {
     "sites": [
         {
+            "ips": [
+                "mail.hostlocal.com."
+            ],
+            "mx": "code-maven.com"
+        },
+        {
             "host": "code-maven.com",
             "ips": [
                 "173.255.196.65"
