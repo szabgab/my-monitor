@@ -6,6 +6,7 @@ import time
 import socket
 import glob
 import sys
+import dns.resolver
 
 # TODO: check TXT and CNAME records as well. Monitor the whole DNS configuration?
 # TODO: Check IPv6 resolutions as well.
@@ -30,6 +31,15 @@ class Monitor:
         self.logger.error(text)
         self.errors.append(text)
 
+    def check_mx(self, site):
+        domain = site['mx']
+        self.logger.info(f"Domain: {domain}")
+        try:
+            records = list(map(lambda rec: str(rec.exchange), dns.resolver.query(domain, 'MX')))
+            if records != site["ips"]:
+                self.save_error(f"Domain {domain} Expected IPS for MX: {site['ips']}  received: {records}")
+        except dns.resolver.NoAnswer as err:
+            self.save_error("Host {domain} Could not find MX record")
 
     def check_host(self, site):
         host = site['host']
@@ -93,6 +103,8 @@ class Monitor:
                 for site in config["sites"]:
                     if 'host' in site:
                         self.check_host(site)
+                    if 'mx' in site:
+                        self.check_mx(site)
                     if 'url' in site:
                         self.check_url(site)
             except Exception as err:
