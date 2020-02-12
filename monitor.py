@@ -7,6 +7,10 @@ import socket
 import glob
 import sys
 
+# TODO: check TXT and CNAME records as well. Monitor the whole DNS configuration?
+# TODO: Check IPv6 resolutions as well.
+# TODO: http multi-step monitorig with username/password?
+
 def setup_logger():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
