@@ -1,21 +1,43 @@
 {
     "sites": [
         {
+            "comment": "Linode",
             "host": "s7.hostlocal.com",
             "ips": [
                 "173.255.196.65"
             ]
         },
         {
+            "comment": "Linode",
             "host": "s8.hostlocal.com",
             "ips": [
                 "50.116.59.34"
             ]
         },
         {
+            "comment": "Linode",
             "host": "s9.hostlocal.com",
             "ips": [
                 "176.58.105.26"
+            ]
+        },
+        {
+            "comment": "Digital Ocean",
+            "host": "s18.hostlocal.com",
+            "ips": [
+                "104.248.229.11"
+            ]
+        },
+        {
+            "host": "lunch.hostlocal.com",
+            "ips": [
+                "104.248.229.11"
+            ]
+        },
+        {
+            "host": "demo.hostlocal.com",
+            "ips": [
+                "104.248.229.11"
             ]
         },
         {
@@ -35,6 +57,60 @@
             "ips": [
                 "50.116.59.34"
             ]
+        },
+        {
+            "host": "ns1.hostlocal.com",
+            "ips": [
+                "176.58.105.26"
+            ]
+        },
+        {
+            "host": "ns2.hostlocal.com",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "host": "svn1.hostlocal.com",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Host Local Training courses for DevOps, in Git, Linux, Jenkins CI, Test Automation, Python</title>",
+            "status_code": 200,
+            "url": "https://hostlocal.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://hostlocal.com/"
+            },
+            "status_code": 301,
+            "url": "http://hostlocal.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://hostlocal.com/"
+            },
+            "status_code": 301,
+            "url": "http://www.hostlocal.com/"
+        },
+        {
+            "comment": "requests complains about SSL certificate",
+            "enabled": false,
+            "html_contains": "<TITLE>mail.hostlocal.com Mailing Lists</TITLE>",
+            "status_code": 200,
+            "url": "https://mail.hostlocal.com/mailman/listinfo"
+        },
+        {
+            "comment": "requests complains about SSL certificate",
+            "enabled": false,
+            "headers": {
+                "Location": "https://mail.hostlocal.com/mailman/listinfo"
+            },
+            "status_code": 301,
+            "url": "https://mail.hostlocal.com/"
         }
     ]
 }
