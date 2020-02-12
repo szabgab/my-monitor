@@ -1,6 +1,36 @@
 {
     "sites": [
         {
+            "host": "osdc.org.il",
+            "ips": [
+                "176.58.105.26"
+            ]
+        },
+        {
+            "host": "www.osdc.org.il",
+            "ips": [
+                "176.58.105.26"
+            ]
+        },
+        {
+            "host": "try.osdc.org.il",
+            "ips": [
+                "176.58.105.26"
+            ]
+        },
+        {
+            "host": "mail.osdc.org.il",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "host": "act.osdc.org.il",
+            "ips": [
+                "163.172.71.72"
+            ]
+        },
+        {
             "comment": "but this should work",
             "enabled": false,
             "html_contains": "<title>Israel.pm - Perl in Israel</title>",
