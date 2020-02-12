@@ -19,6 +19,12 @@
             ]
         },
         {
+            "host": "www.padre.perlide.org",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
             "enabled": true,
             "html_contains": "<title>Padre, the Perl IDE</title>",
             "status_code": 200,
@@ -37,6 +43,14 @@
             },
             "status_code": 301,
             "url": "http://www.perlide.org/"
+        },
+        {
+            "enabled": true,
+            "headers": {
+                "Location": "http://padre.perlide.org/"
+            },
+            "status_code": 301,
+            "url": "http://www.padre.perlide.org/"
         }
     ]
 }

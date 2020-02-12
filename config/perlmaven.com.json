@@ -1,0 +1,96 @@
+{
+    "sites": [
+        {
+            "host": "perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "www.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "meta.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "hu.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "he.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "es.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "id.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "de.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "fr.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "it.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "pl.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "br.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven - for people who want to get the most out of programming in Perl</title>",
+            "status_code": 200,
+            "url": "https://perlmaven.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://perlmaven.com/"
+            },
+            "status_code": 301,
+            "url": "http://www.perlmaven.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://perlmaven.com/"
+            },
+            "status_code": 301,
+            "url": "http://perlmaven.com/"
+        }
+    ]
+}
