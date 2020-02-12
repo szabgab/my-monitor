@@ -39,7 +39,7 @@ class Monitor:
             if records != site["ips"]:
                 self.save_error(f"Domain {domain} Expected IPS for MX: {site['ips']}  received: {records}")
         except dns.resolver.NoAnswer as err:
-            self.save_error("Host {domain} Could not find MX record")
+            self.save_error(f"Domain {domain} Could not find MX record")
 
     def check_host(self, site):
         host = site['host']
