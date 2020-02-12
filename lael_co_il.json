@@ -1,6 +1,16 @@
 {
     "sites": [
         {
+            "host": "lael.co.il",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "shay.lael.co.il",
+            "ips": ["80.179.152.118"]
+        },
+        {
             "html_contains": "<a href=\"http://shay.lael.co.il/\">Shay Lael Advocat</a>",
             "status_code": 200,
             "url": "http://lael.co.il/"
