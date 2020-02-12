@@ -82,13 +82,17 @@ class Monitor:
         else:
             filenames = glob.glob('*.json')
         for filename in filenames:
-            with open(filename) as fh:
-                config = json.load(fh)
-            for site in config["sites"]:
-                if 'host' in site:
-                    self.check_host(site)
-                if 'url' in site:
-                    self.check_url(site)
+            self.logger.info(f"Processing {filename}")
+            try:
+                with open(filename) as fh:
+                    config = json.load(fh)
+                for site in config["sites"]:
+                    if 'host' in site:
+                        self.check_host(site)
+                    if 'url' in site:
+                        self.check_url(site)
+            except Exception as err:
+                self.save_error(f'Exception {err} while processing {filename}')
 
         end_process = time.time()
 
