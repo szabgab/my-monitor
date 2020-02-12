@@ -10,6 +10,6 @@ def tidy(filename):
     with open(filename, 'w') as fh:
         json.dump(data, fh, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
 
-for filename in glob.glob("*.json"):
+for filename in glob.glob("config/*.json"):
     tidy(filename)
 
