@@ -54,8 +54,30 @@
             "url": "https://code-maven.com/"
         },
         {
+            "html_contains": "<title>Code Maven בעברית - מביני קוד</title>",
             "status_code": 200,
             "url": "https://he.code-maven.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://code-maven.com/"
+            },
+            "status_code": 301,
+            "url": "http://code-maven.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://code-maven.com/"
+            },
+            "status_code": 301,
+            "url": "http://www.code-maven.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://he.code-maven.com/"
+            },
+            "status_code": 301,
+            "url": "http://he.code-maven.com/"
         }
     ]
 }
