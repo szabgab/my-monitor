@@ -1,0 +1,42 @@
+{
+    "sites": [
+        {
+            "host": "perlide.org",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "host": "www.perlide.org",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "host": "padre.perlide.org",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Padre, the Perl IDE</title>",
+            "status_code": 200,
+            "url": "http://padre.perlide.org/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Editor, Perl IDE</title>",
+            "status_code": 200,
+            "url": "http://perlide.org/"
+        },
+        {
+            "enabled": true,
+            "headers": {
+                "Location": "http://perlide.org/"
+            },
+            "status_code": 301,
+            "url": "http://www.perlide.org/"
+        }
+    ]
+}
