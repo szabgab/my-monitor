@@ -19,6 +19,12 @@
             ]
         },
         {
+            "host": "find-alike.szabgab.com",
+            "ips": [
+                "104.248.229.11"
+            ]
+        },
+        {
             "headers": {
                 "Location": "https://szabgab.com/"
             },
@@ -30,6 +36,21 @@
             "html_contains": "<title>Gabor Szabo - Test Automation, CI/CD, and DevOps Consultant</title>",
             "status_code": 200,
             "url": "https://szabgab.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://find-me-more-like.szabgab.com/"
+            },
+            "status_code": 301,
+            "url": "http://find-me-more-like.szabgab.com/"
+        },
+        {
+            "enabled": false,
+            "headers": {
+                "Location": "https://find-alike.szabgab.com/"
+            },
+            "status_code": 301,
+            "url": "http://find-alike.szabgab.com/"
         },
         {
             "headers": {

@@ -31,9 +31,8 @@
             ]
         },
         {
-            "comment": "but this should work",
-            "enabled": false,
-            "html_contains": "<title>Israel.pm - Perl in Israel</title>",
+            "enabled": true,
+            "html_contains": "<title>Open Source Developers Club</title>",
             "status_code": 200,
             "url": "http://osdc.org.il/"
         },
@@ -45,9 +44,9 @@
             "url": "http://www.osdc.org.il/"
         },
         {
-            "enabled": false,
+            "enabled": true,
             "headers": {
-                "Location": "http://act.osdc.org.il/ilpw2013/"
+                "Location": "http://act.osdc.org.il/osdc2009il/"
             },
             "status_code": 301,
             "url": "http://act.osdc.org.il/"
