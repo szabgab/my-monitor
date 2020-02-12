@@ -96,15 +96,15 @@ class Monitor:
 
         end_process = time.time()
 
+        self.logger.info(f"Elapsed time: {end_process - start_process}")
+        self.logger.info(f"--------------------------")
         if self.errors:
             for error in self.errors:
                 self.logger.error(error)
-            code = 1
+            return 1
         else:
             self.logger.info("Everything is fine")
-            code = 0
-        self.logger.info(f"Elapsed time: {end_process - start_process}")
-        return code
+            return 0
 
 
 if __name__ == '__main__':
