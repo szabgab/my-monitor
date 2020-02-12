@@ -11,5 +11,8 @@ def tidy(filename):
         json.dump(data, fh, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
 
 for filename in glob.glob("config/*.json"):
-    tidy(filename)
+    try:
+        tidy(filename)
+    except Exception as err:
+        exit(f"Could not process {filename} becaused of {err}")
 
