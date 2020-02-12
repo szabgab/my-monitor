@@ -1,6 +1,30 @@
 {
     "sites": [
         {
+            "host": "perl.org.il",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "host": "www.perl.org.il",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "host": "mail.perl.org.il",
+            "ips": [
+                "50.116.59.34"
+            ]
+        },
+        {
+            "host": "act.perl.org.il",
+            "ips": [
+                "163.172.71.72"
+            ]
+        },
+        {
             "html_contains": "<title>Israel.pm - Perl in Israel</title>",
             "status_code": 200,
             "url": "http://perl.org.il/"
