@@ -1,6 +1,18 @@
 {
     "sites": [
         {
+            "host": "verele.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "www.verele.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
             "html_contains": "<title>Yiddish &amp; Yoga in Yerushalayim</title>",
             "status_code": 200,
             "url": "http://verele.com/"
