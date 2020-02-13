@@ -57,8 +57,6 @@ class Monitor:
         url = site["url"]
         logger = self.logger
         logger.info(f"URL: {url}")
-        if 'enabled' in site and not site['enabled']:
-            return
 
         start = time.time()
         try:
@@ -101,6 +99,8 @@ class Monitor:
                 with open(filename) as fh:
                     config = json.load(fh)
                 for site in config["sites"]:
+                    if 'enabled' in site and not site['enabled']:
+                        continue
                     if 'host' in site:
                         self.check_host(site)
                     if 'mx' in site:
