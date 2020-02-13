@@ -7,10 +7,31 @@
             ]
         },
         {
+            "host": "www.lael.co.il",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "comment": "It seems box.co.il does not support subdomain DNS",
+            "enabled": false,
+            "host": "www.shay.lael.co.il",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
             "host": "shay.lael.co.il",
             "ips": [
                 "80.179.152.118"
             ]
+        },
+        {
+            "headers": {
+                "Location": "http://lael.co.il/"
+            },
+            "status_code": 301,
+            "url": "http://www.lael.co.il/"
         },
         {
             "html_contains": "<a href=\"http://shay.lael.co.il/\">Shay Lael Advocat</a>",

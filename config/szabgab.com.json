@@ -13,6 +13,18 @@
             ]
         },
         {
+            "host": "www.szabgab.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "host.szabgab.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
             "host": "find-me-more-like.szabgab.com",
             "ips": [
                 "104.248.229.11"
@@ -22,6 +34,12 @@
             "host": "find-alike.szabgab.com",
             "ips": [
                 "104.248.229.11"
+            ]
+        },
+        {
+            "host": "feed.szabgab.com",
+            "ips": [
+                "176.58.105.26"
             ]
         },
         {
@@ -36,6 +54,18 @@
             "html_contains": "<title>Gabor Szabo - Test Automation, CI/CD, and DevOps Consultant</title>",
             "status_code": 200,
             "url": "https://szabgab.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "ok",
+            "status_code": 200,
+            "url": "http://host.szabgab.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<li><a href=\"/feeds.html\">feeds</a></li>",
+            "status_code": 200,
+            "url": "http://feed.szabgab.com/"
         },
         {
             "headers": {
