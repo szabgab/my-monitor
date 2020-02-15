@@ -37,6 +37,12 @@
             "url": "http://osdc.org.il/"
         },
         {
+            "enabled": true,
+            "html_contains": "<title>OSDC::Israel::2006 - Open Source Developers' Conference - Open Source Developers' Conference,<br>  26-28 February, 2006, Netanya, Israel</title>",
+            "status_code": 200,
+            "url": "http://osdc.org.il/2006/"
+        },
+        {
             "headers": {
                 "Location": "http://osdc.org.il/"
             },
