@@ -31,11 +31,11 @@
             "url": "http://www.codeandtalk.com/"
         },
         {
-            "comment": "ssh error",
-            "enabled": false,
-            "html_contains": "Presentations from tech events worth watching",
-            "status_code": 200,
-            "url": "https://www.codeandtalk.com/"
+            "headers": {
+                "Location": "https://codeandtalk.com/"
+            },
+            "status_code": 301,
+            "url": "http://codeandtalk.com/"
         }
     ]
 }
