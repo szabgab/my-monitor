@@ -37,6 +37,18 @@
             ]
         },
         {
+            "host": "perl-ecosystem.szabgab.com",
+            "ips": [
+                "176.58.105.26"
+            ]
+        },
+        {
+            "host": "mobile.szabgab.com",
+            "ips": [
+                "176.58.105.26"
+            ]
+        },
+        {
             "headers": {
                 "Location": "https://szabgab.com/"
             },
@@ -86,6 +98,12 @@
             "html_contains": "<title>Some of my work can be found here: | Ariel Szabo</title>",
             "status_code": 200,
             "url": "https://ariel.szabgab.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>MEB</title>",
+            "status_code": 200,
+            "url": "http://mobile.szabgab.com/"
         },
         {
             "ips": [
