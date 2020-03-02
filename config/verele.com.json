@@ -3,29 +3,36 @@
         {
             "host": "verele.com",
             "ips": [
-                "173.255.196.65"
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
             ]
         },
         {
             "host": "www.verele.com",
             "ips": [
-                "173.255.196.65"
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
             ]
         },
         {
-            "html_contains": "<title>Yiddish &amp; Yoga in Yerushalayim</title>",
-            "status_code": 200,
-            "url": "http://verele.com/"
-        },
-        {
-            "enabled": false,
             "html_contains": "<title>Yiddish &amp; Yoga in Yerushalayim</title>",
             "status_code": 200,
             "url": "https://verele.com/"
         },
         {
             "headers": {
-                "Location": "http://verele.com/"
+                "Location": "https://verele.com/"
+            },
+            "status_code": 301,
+            "url": "http://verele.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://verele.com/"
             },
             "status_code": 301,
             "url": "http://www.verele.com/"
