@@ -48,7 +48,7 @@ class Monitor:
         try:
             hostname, aliaslist, ip_addresses = socket.gethostbyname_ex(host)
             self.logger.info(f"hostname: {hostname} ip_addresses={ip_addresses}")
-            if ip_addresses != site["ips"]:
+            if set(ip_addresses) != set(site["ips"]):
                 self.save_error(f"Host {host} Expected IPS: {site['ips']}  received: {ip_addresses}")
         except Exception as err:
             self.save_error(f"Host {host} Expection {err} of type {err.__class__.__name__} received")
