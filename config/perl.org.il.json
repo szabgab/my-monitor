@@ -25,6 +25,13 @@
             ]
         },
         {
+            "comment": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate",
+            "enabled": false,
+            "html_contains": "<title>Israel.pm - Perl in Israel</title>",
+            "status_code": 200,
+            "url": "https://perl.org.il/"
+        },
+        {
             "html_contains": "<title>Israel.pm - Perl in Israel</title>",
             "status_code": 200,
             "url": "http://perl.org.il/"
