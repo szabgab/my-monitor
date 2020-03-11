@@ -1,16 +1,57 @@
 {
     "sites": [
         {
+            "host": "perlweekly.com",
+            "ips": [
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
+            ]
+        },
+        {
+            "host": "www.perlweekly.com",
+            "ips": [
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
+            ]
+        },
+        {
             "html_contains": "<title>Perl Weekly: A Free, Weekly Email Newsletter for the Perl Programming language</title>",
             "status_code": 200,
+            "url": "https://perlweekly.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://perlweekly.com/"
+            },
+            "status_code": 301,
             "url": "http://perlweekly.com/"
         },
         {
             "headers": {
-                "Location": "http://perlweekly.com/"
+                "Location": "https://perlweekly.com/"
             },
             "status_code": 301,
             "url": "http://www.perlweekly.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://mail.perlweekly.com/"
+            },
+            "status_code": 301,
+            "url": "http://mail.perlweekly.com/"
+        },
+        {
+            "comment": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate",
+            "enabled": false,
+            "headers": {
+                "Location": "https://mail.perlweekly.com/mailman/listinfo"
+            },
+            "status_code": 301,
+            "url": "https://mail.perlweekly.com/"
         }
     ]
 }
