@@ -89,6 +89,18 @@
             },
             "status_code": 301,
             "url": "http://he.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Code-Maven Workshops in Israel | Code-Maven Workshops</title>",
+            "status_code": 200,
+            "url": "https://workshops.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Tech Talks for Technical Leaders</title>",
+            "status_code": 200,
+            "url": "https://tech-talks.code-maven.com/"
         }
     ]
 }
