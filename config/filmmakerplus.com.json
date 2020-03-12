@@ -19,11 +19,15 @@
             ]
         },
         {
+            "comment": "Not in use",
+            "enabled": false,
             "html_contains": "He Wasn't Always Like This",
             "status_code": 200,
             "url": "http://filmmakerplus.com/"
         },
         {
+            "comment": "Not in use",
+            "enabled": false,
             "headers": {
                 "Location": "http://filmmakerplus.com/"
             },
