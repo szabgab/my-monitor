@@ -19,6 +19,18 @@
             ]
         },
         {
+            "host": "cn.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
+            "host": "ko.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
             "host": "hu.perlmaven.com",
             "ips": [
                 "173.255.196.65"
@@ -67,6 +79,12 @@
             ]
         },
         {
+            "host": "ru.perlmaven.com",
+            "ips": [
+                "173.255.196.65"
+            ]
+        },
+        {
             "host": "br.perlmaven.com",
             "ips": [
                 "173.255.196.65"
@@ -77,6 +95,36 @@
             "html_contains": "<title>Perl Maven - for people who want to get the most out of programming in Perl</title>",
             "status_code": 200,
             "url": "https://perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "简单的添加和更新操作",
+            "status_code": 200,
+            "url": "https://cn.perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven in Chinese</title>",
+            "status_code": 200,
+            "url": "https://cn.perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven in Korean</title>",
+            "status_code": 200,
+            "url": "https://ko.perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven em Português (Br)</title>",
+            "status_code": 200,
+            "url": "https://br.perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven по-русски</title>",
+            "status_code": 200,
+            "url": "https://ru.perlmaven.com/"
         },
         {
             "headers": {
