@@ -89,10 +89,10 @@ class Monitor:
     def main(self):
         start_process = time.time()
 
-        if len(sys.argv) > 1:
-            filenames = sys.argv[1:]
-        else:
-            filenames = glob.glob('*.json')
+        if len(sys.argv) == 1:
+            exit(f"Usage: {sys.argv[0]} JSON_FILEs")
+
+        filenames = sys.argv[1:]
         for filename in filenames:
             self.logger.info(f"Processing {filename}")
             try:
