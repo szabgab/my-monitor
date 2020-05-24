@@ -110,6 +110,36 @@
         },
         {
             "enabled": true,
+            "html_contains": "<title>Perl Maven in Indonesian</title>",
+            "status_code": 200,
+            "url": "https://id.perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven - für Leute, die das meiste aus der Programmierung mit Perl herausholen wollen</title>",
+            "status_code": 200,
+            "url": "https://de.perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven en Español</title>",
+            "status_code": 200,
+            "url": "https://es.perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven - pour ceux et celles qui veulent tirer le meilleur parti de la programmation en Perl</title>",
+            "status_code": 200,
+            "url": "https://fr.perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Perl Maven in Italian</title>",
+            "status_code": 200,
+            "url": "https://it.perlmaven.com/"
+        },
+        {
+            "enabled": true,
             "html_contains": "<title>Perl Maven in Korean</title>",
             "status_code": 200,
             "url": "https://ko.perlmaven.com/"
