@@ -70,9 +70,19 @@
             "url": "https://he.code-maven.com/"
         },
         {
+            "html_contains": "<title>Code Maven - for people who code</title>",
+            "status_code": 200,
+            "url": "https://ru.code-maven.com/"
+        },
+        {
             "html_contains": "<title>Code Maven - Magyarul</title>",
             "status_code": 200,
             "url": "https://hu.code-maven.com/"
+        },
+        {
+            "html_contains": "<title>Code Maven en Español con errores gramaticales</title>",
+            "status_code": 200,
+            "url": "https://es.code-maven.com/"
         },
         {
             "headers": {
