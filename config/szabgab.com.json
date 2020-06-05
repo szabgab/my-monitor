@@ -38,20 +38,6 @@
             ]
         },
         {
-            "host": "perl-ecosystem.szabgab.com",
-            "ips": [
-                "176.58.105.26"
-            ]
-        },
-        {
-            "comment": "Not in use",
-            "enabled": false,
-            "host": "mobile.szabgab.com",
-            "ips": [
-                "176.58.105.26"
-            ]
-        },
-        {
             "headers": {
                 "Location": "https://szabgab.com/"
             },

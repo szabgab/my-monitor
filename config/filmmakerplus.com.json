@@ -2,12 +2,14 @@
     "sites": [
         {
             "host": "filmmakerplus.com",
+            "enabled": false,
             "ips": [
                 "176.58.105.26"
             ]
         },
         {
             "host": "www.filmmakerplus.com",
+            "enabled": false,
             "ips": [
                 "176.58.105.26"
             ]

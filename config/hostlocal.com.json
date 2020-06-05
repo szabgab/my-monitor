@@ -15,32 +15,6 @@
             ]
         },
         {
-            "comment": "Linode",
-            "host": "s9.hostlocal.com",
-            "ips": [
-                "176.58.105.26"
-            ]
-        },
-        {
-            "comment": "Digital Ocean",
-            "host": "s18.hostlocal.com",
-            "ips": [
-                "104.248.229.11"
-            ]
-        },
-        {
-            "host": "lunch.hostlocal.com",
-            "ips": [
-                "104.248.229.11"
-            ]
-        },
-        {
-            "host": "demo.hostlocal.com",
-            "ips": [
-                "104.248.229.11"
-            ]
-        },
-        {
             "host": "hostlocal.com",
             "ips": [
                 "173.255.196.65"
@@ -54,18 +28,6 @@
         },
         {
             "host": "mail.hostlocal.com",
-            "ips": [
-                "50.116.59.34"
-            ]
-        },
-        {
-            "host": "ns1.hostlocal.com",
-            "ips": [
-                "176.58.105.26"
-            ]
-        },
-        {
-            "host": "ns2.hostlocal.com",
             "ips": [
                 "50.116.59.34"
             ]
