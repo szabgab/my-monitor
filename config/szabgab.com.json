@@ -26,6 +26,7 @@
         },
         {
             "host": "find-alike.szabgab.com",
+            "enabled": false,
             "ips": [
                 "104.248.229.11"
             ]
@@ -80,11 +81,12 @@
             "headers": {
                 "Location": "https://find-alike.szabgab.com/"
             },
+            "enabled": false,
             "status_code": 301,
             "url": "http://find-alike.szabgab.com/"
         },
         {
-            "enabled": true,
+            "enabled": false,
             "html_contains": "<title>FindMeMoreLike_HomePage</title>",
             "status_code": 200,
             "url": "https://find-alike.szabgab.com/"
