@@ -3,13 +3,13 @@
         {
             "host": "cpanforum.com",
             "ips": [
-                "50.116.59.34"
+                "173.255.196.65"
             ]
         },
         {
             "host": "www.cpanforum.com",
             "ips": [
-                "50.116.59.34"
+                "173.255.196.65"
             ]
         },
         {
@@ -20,42 +20,42 @@
         },
         {
             "headers": {
-                "Location": "http://perlmaven.com/"
+                "Location": "https://perlmaven.com/"
             },
-            "status_code": 302,
+            "status_code": 301,
             "url": "http://cpanforum.com/"
         },
         {
             "headers": {
-                "Location": "http://perlmaven.com/expect-before-and-expect-after-with-perl"
+                "Location": "https://perlmaven.com/expect-before-and-expect-after-with-perl"
             },
-            "status_code": 302,
+            "status_code": 301,
             "url": "http://cpanforum.com/threads/1669"
         },
         {
             "headers": {
-                "Location": "http://perlmaven.com/crypt-ssleay-500-cant-connect-to-crypt-ssleay-cant-verify-hostnames"
+                "Location": "https://perlmaven.com/crypt-ssleay-500-cant-connect-to-crypt-ssleay-cant-verify-hostnames"
             },
-            "status_code": 302,
+            "status_code": 301,
             "url": "http://cpanforum.com/posts/13754"
         },
         {
             "headers": {
-                "Location": "http://perlmaven.com/"
+                "Location": "https://perlmaven.com/"
             },
-            "status_code": 302,
+            "status_code": 301,
             "url": "http://cpanforum.com/anything"
         },
         {
             "headers": {
-                "Location": "http://perlmaven.com/padwalker-for-windows-solution"
+                "Location": "https://perlmaven.com/padwalker-for-windows-solution"
             },
-            "status_code": 302,
+            "status_code": 301,
             "url": "http://cpanforum.com/posts/9879"
         },
         {
             "headers": {
-                "Location": "http://cpanforum.com/"
+                "Location": "https://perlmaven.com/"
             },
             "status_code": 301,
             "url": "http://www.cpanforum.com/"
