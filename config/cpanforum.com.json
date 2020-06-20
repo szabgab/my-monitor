@@ -48,6 +48,13 @@
         },
         {
             "headers": {
+                "Location": "http://perlmaven.com/padwalker-for-windows-solution"
+            },
+            "status_code": 302,
+            "url": "http://cpanforum.com/posts/9879"
+        },
+        {
+            "headers": {
                 "Location": "http://cpanforum.com/"
             },
             "status_code": 301,
