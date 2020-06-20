@@ -27,6 +27,27 @@
         },
         {
             "headers": {
+                "Location": "http://perlmaven.com/expect-before-and-expect-after-with-perl"
+            },
+            "status_code": 302,
+            "url": "http://cpanforum.com/threads/1669"
+        },
+        {
+            "headers": {
+                "Location": "http://perlmaven.com/crypt-ssleay-500-cant-connect-to-crypt-ssleay-cant-verify-hostnames"
+            },
+            "status_code": 302,
+            "url": "http://cpanforum.com/posts/13754"
+        },
+        {
+            "headers": {
+                "Location": "http://perlmaven.com/"
+            },
+            "status_code": 302,
+            "url": "http://cpanforum.com/anything"
+        },
+        {
+            "headers": {
                 "Location": "http://cpanforum.com/"
             },
             "status_code": 301,
