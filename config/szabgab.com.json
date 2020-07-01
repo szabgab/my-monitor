@@ -25,8 +25,8 @@
             ]
         },
         {
-            "host": "find-alike.szabgab.com",
             "enabled": false,
+            "host": "find-alike.szabgab.com",
             "ips": [
                 "104.248.229.11"
             ]
@@ -64,10 +64,10 @@
             "url": "http://feed.szabgab.com/"
         },
         {
+            "enabled": false,
             "headers": {
                 "Location": "https://find-alike.szabgab.com/"
             },
-            "enabled": false,
             "status_code": 301,
             "url": "http://find-alike.szabgab.com/"
         },
