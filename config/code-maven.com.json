@@ -113,7 +113,7 @@
         },
         {
             "comment": "GitHub pages",
-            "html_contains": "<title>Tech Talks for Technical Leaders</title>",
+            "html_contains": "<title>Annotated Tech Talks</title>",
             "status_code": 200,
             "url": "https://tech-talks.code-maven.com/"
         }
