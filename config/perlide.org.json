@@ -15,19 +15,30 @@
         {
             "host": "padre.perlide.org",
             "ips": [
-                "50.116.59.34"
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
             ]
         },
         {
             "host": "www.padre.perlide.org",
             "ips": [
-                "50.116.59.34"
+                "173.255.196.65"
             ]
         },
         {
             "enabled": true,
             "html_contains": "<title>Padre, the Perl IDE</title>",
             "status_code": 200,
+            "url": "https://padre.perlide.org/"
+        },
+        {
+            "enabled": true,
+            "headers": {
+                "Location": "https://padre.perlide.org/"
+            },
+            "status_code": 301,
             "url": "http://padre.perlide.org/"
         },
         {
@@ -47,7 +58,7 @@
         {
             "enabled": true,
             "headers": {
-                "Location": "http://padre.perlide.org/"
+                "Location": "https://padre.perlide.org/"
             },
             "status_code": 301,
             "url": "http://www.padre.perlide.org/"
