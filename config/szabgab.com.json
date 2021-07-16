@@ -57,8 +57,8 @@
             "url": "http://host.szabgab.com/"
         },
         {
-            "comment": "Not in use",
-            "enabled": false,
+            "comment": "",
+            "enabled": true,
             "html_contains": "<li><a href=\"/feeds.html\">feeds</a></li>",
             "status_code": 200,
             "url": "http://feed.szabgab.com/"
