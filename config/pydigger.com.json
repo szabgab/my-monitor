@@ -6,7 +6,7 @@
             "url": "https://pydigger.com/"
         },
         {
-            "html_contains": "https://pydigger.com/stats",
+            "html_contains": "<title>PyDigger - Statistics</title>",
             "status_code": 200,
             "url": "https://pydigger.com/stats"
         },
