@@ -36,7 +36,7 @@ class Monitor:
         self.logger.info(f"Domain: {domain}")
         try:
             records = list(map(lambda rec: str(rec.exchange), dns.resolver.query(domain, 'MX')))
-            if records != site["ips"]:
+            if sorted(records) != sorted(site["ips"]):
                 self.save_error(f"Domain {domain} Expected IPS for MX: {site['ips']}  received: {records}")
         except dns.resolver.NoAnswer as err:
             self.save_error(f"Domain {domain} Could not find MX record")
