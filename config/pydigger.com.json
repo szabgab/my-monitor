@@ -6,6 +6,11 @@
             "url": "https://pydigger.com/"
         },
         {
+            "html_contains": "https://pydigger.com/stats",
+            "status_code": 200,
+            "url": "https://pydigger.com/stats"
+        },
+        {
             "headers": {
                 "Location": "https://pydigger.com/"
             },
