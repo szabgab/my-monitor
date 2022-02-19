@@ -2,7 +2,8 @@
     "sites": [
         {
             "ips": [
-                "mail.hostlocal.com."
+                "mx1.forwardemail.net.",
+                "mx2.forwardemail.net."
             ],
             "mx": "code-maven.com"
         },

@@ -99,7 +99,8 @@
         },
         {
             "ips": [
-                "mail.hostlocal.com."
+                "mx1.forwardemail.net.",
+                "mx2.forwardemail.net."
             ],
             "mx": "szabgab.com"
         },
