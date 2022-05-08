@@ -20,6 +20,7 @@
         },
         {
             "host": "act.perl.org.il",
+            "enabled": false,
             "ips": [
                 "163.172.71.72"
             ]
@@ -48,11 +49,13 @@
                 "Location": "http://act.perl.org.il/ilpw2013/"
             },
             "status_code": 301,
+            "enabled": false,
             "url": "http://act.perl.org.il/"
         },
         {
             "html_contains": "Perl Workshop in Israel, 2013",
             "status_code": 200,
+            "enabled": false,
             "url": "http://act.perl.org.il/ilpw2013/"
         },
         {
