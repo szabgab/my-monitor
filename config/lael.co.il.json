@@ -23,7 +23,7 @@
         {
             "host": "shay.lael.co.il",
             "ips": [
-                "80.179.152.118"
+                "185.145.255.51"
             ]
         },
         {
@@ -41,6 +41,13 @@
         {
             "html_contains": "<title>עורך דין שי לאל | עורך דין שי לאל</title>",
             "status_code": 200,
+            "url": "https://shay.lael.co.il/"
+        },
+        {
+            "headers": {
+                "Location": "https://shay.lael.co.il/"
+            },
+            "status_code": 301,
             "url": "http://shay.lael.co.il/"
         }
     ]
