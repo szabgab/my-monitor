@@ -169,6 +169,12 @@
             },
             "status_code": 301,
             "url": "http://perlmaven.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>CPAN Digger</title>",
+            "status_code": 200,
+            "url": "https://cpan-digger.perlmaven.com/"
         }
     ]
 }
