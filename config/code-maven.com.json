@@ -117,6 +117,12 @@
             "html_contains": "<title>Annotated Tech Talks</title>",
             "status_code": 200,
             "url": "https://tech-talks.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>OSDC - Open Source Development Course | OSDC</title>",
+            "status_code": 200,
+            "url": "https://osdc.code-maven.com/"
         }
     ]
 }
