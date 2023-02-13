@@ -32,6 +32,7 @@
             ]
         },
         {
+            "enabled": false,
             "host": "feed.szabgab.com",
             "ips": [
                 "173.255.196.65"
@@ -57,6 +58,7 @@
             "url": "http://host.szabgab.com/"
         },
         {
+            "enabled": false,
             "comment": "",
             "enabled": true,
             "html_contains": "<li><a href=\"/feeds.html\">feeds</a></li>",

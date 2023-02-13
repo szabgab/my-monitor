@@ -13,6 +13,7 @@
             ]
         },
         {
+            "enabled": false,
             "host": "mail.codeandtalk.com",
             "ips": [
                 "50.116.59.34"
@@ -36,6 +37,14 @@
             },
             "status_code": 301,
             "url": "http://codeandtalk.com/"
+        },
+        {
+            "ips": [
+                "mx1.forwardemail.net.",
+                "mx2.forwardemail.net."
+            ],
+            "mx": "codeandtalk.com"
         }
+
     ]
 }

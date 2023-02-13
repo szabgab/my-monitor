@@ -13,6 +13,7 @@
             ]
         },
         {
+            "enabled": false,
             "host": "mail.perl.org.il",
             "ips": [
                 "50.116.59.34"
@@ -59,11 +60,20 @@
             "url": "http://act.perl.org.il/ilpw2013/"
         },
         {
+            "enabled": false,
             "headers": {
                 "Location": "https://mail.perl.org.il/"
             },
             "status_code": 301,
             "url": "http://mail.perl.org.il/"
+        },
+        {
+            "ips": [
+                "mx1.forwardemail.net.",
+                "mx2.forwardemail.net."
+            ],
+            "mx": "perl.org.il"
         }
+
     ]
 }

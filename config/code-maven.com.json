@@ -50,6 +50,7 @@
             ]
         },
         {
+            "enabled": false,
             "host": "mail.code-maven.com",
             "ips": [
                 "50.116.59.34"

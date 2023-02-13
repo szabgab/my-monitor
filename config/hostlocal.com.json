@@ -73,6 +73,13 @@
             },
             "status_code": 301,
             "url": "https://mail.hostlocal.com/"
+        },
+        {
+            "ips": [
+                "mx1.forwardemail.net.",
+                "mx2.forwardemail.net."
+            ],
+            "mx": "code-maven.com"
         }
     ]
 }
