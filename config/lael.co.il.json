@@ -2,15 +2,11 @@
     "sites": [
         {
             "host": "lael.co.il",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": ["185.199.111.153", "185.199.109.153", "185.199.110.153", "185.199.108.153"]
         },
         {
             "host": "www.lael.co.il",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": ["185.199.111.153", "185.199.109.153", "185.199.110.153", "185.199.108.153"]
         },
         {
             "comment": "It seems box.co.il does not support subdomain DNS",
@@ -28,15 +24,22 @@
         },
         {
             "headers": {
-                "Location": "http://lael.co.il/"
+                "Location": "https://lael.co.il/"
             },
             "status_code": 301,
             "url": "http://www.lael.co.il/"
         },
         {
-            "html_contains": "<a href=\"http://shay.lael.co.il/\">Shay Lael Advocat</a>",
-            "status_code": 200,
+            "headers": {
+                "Location": "https://lael.co.il/"
+            },
+            "status_code": 301,
             "url": "http://lael.co.il/"
+        },
+         {
+            "html_contains": "<a href=\"https://shay.lael.co.il/\">Shay Lael Advocat</a>",
+            "status_code": 200,
+            "url": "https://lael.co.il/"
         },
         {
             "html_contains": "<title>עורך דין שי לאל | עורך דין שי לאל</title>",
