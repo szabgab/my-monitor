@@ -121,7 +121,7 @@
         },
         {
             "comment": "GitHub pages",
-            "html_contains": "<title>OSDC - Open Source Development Course | OSDC</title>",
+            "html_contains": "<title>OSDC | Open Source Development Course &amp; Community</title>",
             "status_code": 200,
             "url": "https://osdc.code-maven.com/"
         }
