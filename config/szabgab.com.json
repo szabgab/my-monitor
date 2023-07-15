@@ -47,7 +47,7 @@
         },
         {
             "enabled": true,
-            "html_contains": "<title>Gabor Szabo - Test Automation, CI/CD, and DevOps - Trainer and Consultant</title>",
+            "html_contains": "<title>Gábor Szabó - Teaching Python, testing, and git</title>",
             "status_code": 200,
             "url": "https://szabgab.com/"
         },
