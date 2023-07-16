@@ -59,6 +59,12 @@
         },
         {
             "enabled": true,
+            "html_contains": "<title>Index of Perl keywords</title>",
+            "status_code": 200,
+            "url": "https://szabgab.com/keywords.html"
+        },
+        {
+            "enabled": true,
             "html_contains": "ok",
             "status_code": 200,
             "url": "http://host.szabgab.com/"
