@@ -55,13 +55,13 @@
             "enabled": true,
             "html_contains": "<title>Recommended Books</title>",
             "status_code": 200,
-            "url": "https://szabgab.com/books.html"
+            "url": "https://szabgab.com/books"
         },
         {
             "enabled": true,
             "html_contains": "<title>Index of Perl keywords</title>",
             "status_code": 200,
-            "url": "https://szabgab.com/keywords.html"
+            "url": "https://szabgab.com/keywords"
         },
         {
             "enabled": true,
