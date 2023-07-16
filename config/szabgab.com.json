@@ -53,6 +53,12 @@
         },
         {
             "enabled": true,
+            "html_contains": "<title>Recommended Books</title>",
+            "status_code": 200,
+            "url": "https://szabgab.com/books.html"
+        },
+        {
+            "enabled": true,
             "html_contains": "ok",
             "status_code": 200,
             "url": "http://host.szabgab.com/"
