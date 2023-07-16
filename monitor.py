@@ -98,6 +98,9 @@ class Monitor:
             try:
                 with open(filename) as fh:
                     config = json.load(fh)
+            except Exception as err:
+                self.save_error(f'Exception {err} while reading config file {filename}')
+            try:
                 for site in config["sites"]:
                     if 'enabled' in site and not site['enabled']:
                         continue
@@ -108,7 +111,7 @@ class Monitor:
                     if 'url' in site:
                         self.check_url(site)
             except Exception as err:
-                self.save_error(f'Exception {err} while processing {filename}')
+                self.save_error(f'Exception {err} while processing site {site} from file {filename}')
 
         end_process = time.time()
 
