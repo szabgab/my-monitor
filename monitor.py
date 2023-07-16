@@ -84,7 +84,7 @@ class Monitor:
 
         if 'html_contains' in site:
             if site['html_contains'] not in resp.content.decode('utf-8'):
-                self.save_error(f'URL {url} expected some html_content but did not receive it')
+                self.save_error(f'''URL {url} expected html_content '{site['html_contains']}' but did not receive it.''')
 
     def main(self):
         start_process = time.time()
