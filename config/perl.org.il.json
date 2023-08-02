@@ -2,15 +2,11 @@
     "sites": [
         {
             "host": "perl.org.il",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": ["185.199.108.153", "185.199.111.153", "185.199.109.153", "185.199.110.153"]
         },
         {
             "host": "www.perl.org.il",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": ["185.199.108.153", "185.199.111.153", "185.199.109.153", "185.199.110.153"]
         },
         {
             "enabled": false,
@@ -27,15 +23,16 @@
             ]
         },
         {
-            "comment": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate",
-            "enabled": false,
+            "enabled": true,
             "html_contains": "<title>Israel.pm - Perl in Israel</title>",
             "status_code": 200,
             "url": "https://perl.org.il/"
         },
         {
-            "html_contains": "<title>Israel.pm - Perl in Israel</title>",
-            "status_code": 200,
+            "headers": {
+                "Location": "https://perl.org.il/"
+            },
+            "status_code": 301,
             "url": "http://perl.org.il/"
         },
         {
