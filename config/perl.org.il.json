@@ -2,11 +2,21 @@
     "sites": [
         {
             "host": "perl.org.il",
-            "ips": ["185.199.108.153", "185.199.111.153", "185.199.109.153", "185.199.110.153"]
+            "ips": [
+                "185.199.108.153",
+                "185.199.111.153",
+                "185.199.109.153",
+                "185.199.110.153"
+            ]
         },
         {
             "host": "www.perl.org.il",
-            "ips": ["185.199.108.153", "185.199.111.153", "185.199.109.153", "185.199.110.153"]
+            "ips": [
+                "185.199.108.153",
+                "185.199.111.153",
+                "185.199.109.153",
+                "185.199.110.153"
+            ]
         },
         {
             "enabled": false,
@@ -16,8 +26,8 @@
             ]
         },
         {
-            "host": "act.perl.org.il",
             "enabled": false,
+            "host": "act.perl.org.il",
             "ips": [
                 "163.172.71.72"
             ]
@@ -27,6 +37,25 @@
             "html_contains": "<title>Israel.pm - Perl in Israel</title>",
             "status_code": 200,
             "url": "https://perl.org.il/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>YAPC::Israel - Yet Another Perl Conference in Israel</title>",
+            "status_code": 200,
+            "url": "https://perl.org.il/YAPC/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>YAPC::Israel::2005 - 3rd Perl Conference in Israel on 17 February, 2005</title>",
+            "status_code": 200,
+            "url": "https://perl.org.il/YAPC/2005/"
+        },
+        {
+            "headers": {
+                "Location": "https://perl.org.il/YAPC/"
+            },
+            "status_code": 301,
+            "url": "https://perl.org.il/YAPC"
         },
         {
             "headers": {
@@ -43,17 +72,17 @@
             "url": "http://www.perl.org.il/"
         },
         {
+            "enabled": false,
             "headers": {
                 "Location": "http://act.perl.org.il/ilpw2013/"
             },
             "status_code": 301,
-            "enabled": false,
             "url": "http://act.perl.org.il/"
         },
         {
+            "enabled": false,
             "html_contains": "Perl Workshop in Israel, 2013",
             "status_code": 200,
-            "enabled": false,
             "url": "http://act.perl.org.il/ilpw2013/"
         },
         {
@@ -71,6 +100,5 @@
             ],
             "mx": "perl.org.il"
         }
-
     ]
 }
