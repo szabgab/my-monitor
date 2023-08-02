@@ -38,11 +38,11 @@
             "url": "http://www.perlweekly.com/"
         },
         {
+            "enabled": false,
             "headers": {
                 "Location": "https://mail.perlweekly.com/"
             },
             "status_code": 301,
-            "enabled": false,
             "url": "http://mail.perlweekly.com/"
         },
         {
