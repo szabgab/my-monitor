@@ -3,13 +3,19 @@
         {
             "host": "perlide.org",
             "ips": [
-                "173.255.196.65"
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
             ]
         },
         {
             "host": "www.perlide.org",
             "ips": [
-                "173.255.196.65"
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
             ]
         },
         {
@@ -22,6 +28,7 @@
             ]
         },
         {
+            "enabled": false,
             "host": "www.padre.perlide.org",
             "ips": [
                 "173.255.196.65"
@@ -45,18 +52,18 @@
             "enabled": true,
             "html_contains": "<title>Perl Editor, Perl IDE</title>",
             "status_code": 200,
-            "url": "http://perlide.org/"
+            "url": "https://perlide.org/"
         },
         {
             "enabled": true,
             "headers": {
-                "Location": "http://perlide.org/"
+                "Location": "https://perlide.org/"
             },
             "status_code": 301,
-            "url": "http://www.perlide.org/"
+            "url": "https://www.perlide.org/"
         },
         {
-            "enabled": true,
+            "enabled": false,
             "headers": {
                 "Location": "https://padre.perlide.org/"
             },
