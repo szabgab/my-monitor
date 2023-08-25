@@ -47,7 +47,7 @@
         },
         {
             "enabled": true,
-            "html_contains": "<title>Gábor Szabó - Teaching Python, Git, and Docker</title>",
+            "html_contains": "<title>Gábor Szabó - Teaching Rust, Python, Git, and Docker</title>",
             "status_code": 200,
             "url": "https://szabgab.com/"
         },
