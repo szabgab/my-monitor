@@ -128,6 +128,12 @@
             "html_contains": "<title>Hike in Israel | hike-in-israel</title>",
             "status_code": 200,
             "url": "https://github.szabgab.com/hike-in-israel/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Magyarul Izraelből</title>",
+            "status_code": 200,
+            "url": "https://izrael.szabgab.com/"
         }
-    ]
+     ]
 }
