@@ -120,6 +120,11 @@
             "url": "https://tech-talks.code-maven.com/"
         },
         {
+            "html_contains": "<title>Rust Maven</title>",
+            "status_code": 200,
+            "url": "https://rust.code-maven.com/"
+        },
+        {
             "comment": "GitHub pages",
             "html_contains": "<title>OSDC | Open Source Development Course &amp; Community</title>",
             "status_code": 200,
