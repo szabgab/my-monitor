@@ -125,7 +125,7 @@
         },
         {
             "comment": "GitHub pages",
-            "html_contains": "<title>Hike in Israel | hike-in-israel</title>",
+            "html_contains": "<title>Hike in Israel | GitHub Page of Gábor Szabó</title>",
             "status_code": 200,
             "url": "https://github.szabgab.com/hike-in-israel/"
         },
