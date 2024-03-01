@@ -45,6 +45,13 @@ class Monitor:
         host = site['host']
         self.logger.info(f"Host: {host}")
 
+        if site["ips"] == "github":
+            site["ips"] = [
+                "185.199.108.153",
+                "185.199.109.153",
+                "185.199.110.153",
+                "185.199.111.153"
+            ]
         try:
             hostname, aliaslist, ip_addresses = socket.gethostbyname_ex(host)
             self.logger.info(f"hostname: {hostname} ip_addresses={ip_addresses}")
@@ -102,6 +109,7 @@ class Monitor:
                 self.save_error(f'Exception {err} while reading config file {filename}')
             try:
                 for site in config["sites"]:
+
                     if 'enabled' in site and not site['enabled']:
                         continue
                     if 'host' in site:

@@ -2,21 +2,11 @@
     "sites": [
         {
             "host": "lael.co.il",
-            "ips": [
-                "185.199.111.153",
-                "185.199.109.153",
-                "185.199.110.153",
-                "185.199.108.153"
-            ]
+            "ips": "github"
         },
         {
             "host": "www.lael.co.il",
-            "ips": [
-                "185.199.111.153",
-                "185.199.109.153",
-                "185.199.110.153",
-                "185.199.108.153"
-            ]
+            "ips": "github"
         },
         {
             "comment": "It seems box.co.il does not support subdomain DNS",
