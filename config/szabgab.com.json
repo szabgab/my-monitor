@@ -40,6 +40,25 @@
             "url": "http://szabgab.com/"
         },
         {
+            "html_contains": "<title>Redirecting to https://kantoniko.com/echar-lashon</title>",
+            "status_code": 200,
+            "url": "https://echar-lashon.szabgab.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://echar-lashon.szabgab.com/"
+            },
+            "status_code": 301,
+            "url": "http://echar-lashon.szabgab.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://code-maven.com/"
+            },
+            "status_code": 301,
+            "url": "http://adserver.szabgab.com/"
+         },
+         {
             "enabled": true,
             "html_contains": "<title>Gábor Szabó - Teaching Rust, Python, Git, and Docker</title>",
             "status_code": 200,
@@ -122,6 +141,30 @@
             "html_contains": "<title>Hike in Israel | GitHub Page of Gábor Szabó</title>",
             "status_code": 200,
             "url": "https://github.szabgab.com/hike-in-israel/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Games</title>",
+            "status_code": 200,
+            "url": "https://games.szabgab.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>Ladino - Judeo-Spanish | Ladino, the language of the Sepharadic Jews</title>",
+            "status_code": 200,
+            "url": "https://ladino.szabgab.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>LibreLingo courses</title>",
+            "status_code": 200,
+            "url": "https://lili.szabgab.com/"
+        },
+        {
+            "enabled": true,
+            "html_contains": "<title>From Israel</title>",
+            "status_code": 200,
+            "url": "https://israel.szabgab.com/"
         },
         {
             "enabled": true,
