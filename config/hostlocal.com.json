@@ -8,13 +8,6 @@
             ]
         },
         {
-            "comment": "Linode",
-            "host": "s8.hostlocal.com",
-            "ips": [
-                "50.116.59.34"
-            ]
-        },
-        {
             "host": "hostlocal.com",
             "ips": [
                 "173.255.196.65"
@@ -24,18 +17,6 @@
             "host": "www.hostlocal.com",
             "ips": [
                 "173.255.196.65"
-            ]
-        },
-        {
-            "host": "mail.hostlocal.com",
-            "ips": [
-                "50.116.59.34"
-            ]
-        },
-        {
-            "host": "svn1.hostlocal.com",
-            "ips": [
-                "50.116.59.34"
             ]
         },
         {
@@ -57,6 +38,13 @@
             },
             "status_code": 301,
             "url": "http://www.hostlocal.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://code-maven.com/"
+            },
+            "status_code": 301,
+            "url": "http://s7.hostlocal.com/"
         },
         {
             "comment": "requests complains about SSL certificate",
