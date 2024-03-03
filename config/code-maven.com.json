@@ -50,13 +50,6 @@
             ]
         },
         {
-            "enabled": false,
-            "host": "mail.code-maven.com",
-            "ips": [
-                "50.116.59.34"
-            ]
-        },
-        {
             "html_contains": "Welcome to the Code Maven!",
             "status_code": 200,
             "url": "https://code-maven.com/"
@@ -123,6 +116,66 @@
             "html_contains": "<title>Rust Maven</title>",
             "status_code": 200,
             "url": "https://rust.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Banbu, the Banner Builder</title>",
+            "status_code": 200,
+            "url": "https://banner-builder.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>DevOps Workshops in Israel | DevOps Workshops</title>",
+            "status_code": 200,
+            "url": "https://devops-workshops.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Forem-based sites</title>",
+            "status_code": 200,
+            "url": "https://forem.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Code Maven</title>",
+            "status_code": 200,
+            "url": "https://github.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Rust Digger</title>",
+            "status_code": 200,
+            "url": "https://rust-digger.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>rustatic</title>",
+            "status_code": 200,
+            "url": "https://rustatic.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Site Checker</title>",
+            "status_code": 200,
+            "url": "https://site-checker.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Rust news</title>",
+            "status_code": 200,
+            "url": "https://rust-news.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Code Maven Static Site Generator</title>",
+            "status_code": 200,
+            "url": "https://ssg.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
+            "html_contains": "<title>Ruby Digger</title>",
+            "status_code": 200,
+            "url": "https://ruby-digger.code-maven.com/"
         },
         {
             "comment": "GitHub pages",
