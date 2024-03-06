@@ -52,6 +52,8 @@
             "url": "http://echar-lashon.szabgab.com/"
         },
         {
+            "comment": "When accessing from home it is redirected to code-maven.com when accessing by GitHub Actions it is rediredcted to perlmaven.com",
+            "enabled": false,
             "headers": {
                 "Location": "https://code-maven.com/"
             },
