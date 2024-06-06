@@ -102,7 +102,7 @@
         },
         {
             "comment": "GitHub pages",
-            "html_contains": "<title>Code-Maven Workshops in Israel | Code-Maven Workshops</title>",
+            "html_contains": "<title>Code-Maven Workshops | Tell me and I forget. Teach me and I remember. Involve me and I learn.</title>",
             "status_code": 200,
             "url": "https://workshops.code-maven.com/"
         },
