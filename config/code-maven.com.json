@@ -57,7 +57,7 @@
         {
             "html_contains": "<title>Code-Maven training courses</title>",
             "status_code": 200,
-            "url": "https://code-maven.com/slides/"
+            "url": "https://slides.code-maven.com/"
         },
         {
             "html_contains": "<title>Code Maven בעברית - מביני קוד</title>",
