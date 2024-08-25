@@ -9,6 +9,7 @@
             "ips": ["173.255.196.65"]
         },
         {
+            "enabled": false,
             "html_contains": "<title>Meet-OS</title>",
             "status_code": 200,
             "url": "https://meet-os.com/"
