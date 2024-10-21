@@ -102,6 +102,12 @@
         },
         {
             "comment": "GitHub pages",
+            "html_contains": "<title>Python Maven</title>",
+            "status_code": 200,
+            "url": "https://python.code-maven.com/"
+        },
+        {
+            "comment": "GitHub pages",
             "html_contains": "<title>Code-Maven Workshops | Tell me and I forget. Teach me and I remember. Involve me and I learn.</title>",
             "status_code": 200,
             "url": "https://workshops.code-maven.com/"
