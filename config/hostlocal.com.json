@@ -21,7 +21,7 @@
         },
         {
             "enabled": true,
-            "html_contains": "<title>Host Local Training courses for DevOps, in Git, Linux, Jenkins CI, Test Automation, Python</title>",
+            "html_contains": "<title>Host Local Training courses for Rust and Python</title>",
             "status_code": 200,
             "url": "https://hostlocal.com/"
         },
