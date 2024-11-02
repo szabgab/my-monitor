@@ -1,12 +1,14 @@
 {
     "sites": [
         {
+            "enabled": false,
             "host": "codeandtalk.com",
             "ips": [
                 "173.255.196.65"
             ]
         },
         {
+            "enabled": false,
             "host": "www.codeandtalk.com",
             "ips": [
                 "173.255.196.65"
@@ -20,11 +22,13 @@
             ]
         },
         {
+            "enabled": false,
             "html_contains": "Presentations from tech events worth watching",
             "status_code": 200,
             "url": "https://codeandtalk.com/"
         },
         {
+            "enabled": false,
             "headers": {
                 "Location": "https://codeandtalk.com/"
             },
@@ -32,6 +36,7 @@
             "url": "http://www.codeandtalk.com/"
         },
         {
+            "enabled": false,
             "headers": {
                 "Location": "https://codeandtalk.com/"
             },
