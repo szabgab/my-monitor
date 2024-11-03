@@ -68,6 +68,11 @@
             "url": "https://slides.code-maven.com/"
         },
         {
+            "html_contains": "<title>Front-End Maven</title>",
+            "status_code": 200,
+            "url": "https://front.code-maven.com/"
+        },
+        {
             "html_contains": "<title>Code Maven בעברית - מביני קוד</title>",
             "status_code": 200,
             "url": "https://he.code-maven.com/"
