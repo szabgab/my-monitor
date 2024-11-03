@@ -21,9 +21,7 @@
         },
         {
             "host": "hu.code-maven.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "he.code-maven.com",
@@ -39,9 +37,7 @@
         },
         {
             "host": "es.code-maven.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "meta.code-maven.com",
@@ -50,6 +46,18 @@
             ]
         },
         {
+            "host": "front.code-maven.com",
+            "ips": "github"
+        },
+        {
+            "host": "rust-he.code-maven.com",
+            "ips": "github"
+        },
+        {
+            "host": "python-he.code-maven.com",
+            "ips": "github"
+        },
+         {
             "html_contains": "Welcome to the Code Maven!",
             "status_code": 200,
             "url": "https://code-maven.com/"

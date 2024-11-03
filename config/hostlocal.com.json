@@ -9,15 +9,11 @@
         },
         {
             "host": "hostlocal.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "www.hostlocal.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "enabled": true,
