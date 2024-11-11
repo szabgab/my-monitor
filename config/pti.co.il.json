@@ -2,35 +2,31 @@
     "sites": [
         {
             "host": "pti.co.il",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
+        },
+        {
+            "host": "www.pti.co.il",
+            "ips": "github"
         },
         {
             "html_contains": "Python, Perl, and Linux Training Israel (PTI)",
             "status_code": 200,
-            "url": "http://pti.co.il/"
+            "url": "https://pti.co.il/"
         },
         {
             "headers": {
-                "Location": "http://pti.co.il/"
+                "Location": "https://pti.co.il/"
+            },
+            "status_code": 301,
+            "url": "http://pti.co.il/"
+        },
+
+        {
+            "headers": {
+                "Location": "https://pti.co.il/"
             },
             "status_code": 301,
             "url": "http://www.pti.co.il/"
-        },
-        {
-            "headers": {
-                "Location": "http://pti.co.il/"
-            },
-            "status_code": 301,
-            "url": "http://yapcom.pti.co.il/"
-        },
-        {
-            "headers": {
-                "Location": "http://pti.co.il/"
-            },
-            "status_code": 301,
-            "url": "http://svn.pti.co.il/"
         }
     ]
 }
