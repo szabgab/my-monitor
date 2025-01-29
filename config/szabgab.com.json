@@ -173,6 +173,23 @@
             "html_contains": "<title>Magyarul Izraelből</title>",
             "status_code": 200,
             "url": "https://izrael.szabgab.com/"
+        },
+
+        {
+            "host": "pti.szabgab.com",
+            "ips": "github"
+        },
+        {
+            "html_contains": "Python, Perl, and Linux Training Israel (PTI)",
+            "status_code": 200,
+            "url": "https://pti.szabgab.com/"
+        },
+        {
+            "headers": {
+                "Location": "https://pti.szabgab.com/"
+            },
+            "status_code": 301,
+            "url": "http://pti.szabgab.com/"
         }
-     ]
+    ]
 }
