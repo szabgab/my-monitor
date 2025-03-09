@@ -25,9 +25,7 @@
         },
         {
             "host": "he.code-maven.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "ru.code-maven.com",
@@ -71,17 +69,17 @@
             "url": "https://front.code-maven.com/"
         },
         {
-            "html_contains": "<title>תכנות ראסט בעברית</title>",
+            "html_contains": "<title>תכנות ראסט בעברית - מביני קוד - מביני ראסט</title>",
             "status_code": 200,
             "url": "https://rust-he.code-maven.com/"
         },
         {
-            "html_contains": "<title>מביני קוד פייתון</title>",
+            "html_contains": "<title>מביני קוד פייתון - מביני קוד - מביני פייתון</title>",
             "status_code": 200,
             "url": "https://python-he.code-maven.com/"
         },
         {
-            "html_contains": "<title>Code Maven בעברית - מביני קוד</title>",
+            "html_contains": "<title>מביני קוד בעברית - מביני קוד בעברית</title>",
             "status_code": 200,
             "url": "https://he.code-maven.com/"
         },
