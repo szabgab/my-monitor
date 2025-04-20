@@ -34,12 +34,16 @@ class Monitor:
     def check_mx(self, site):
         domain = site['mx']
         self.logger.info(f"Domain: {domain}")
+        start = time.time()
         try:
             records = list(map(lambda rec: str(rec.exchange), dns.resolver.query(domain, 'MX')))
             if sorted(records) != sorted(site["ips"]):
                 self.save_error(f"Domain {domain} Expected IPS for MX: {site['ips']}  received: {records}")
         except dns.resolver.NoAnswer as err:
             self.save_error(f"Domain {domain} Could not find MX record")
+        finally:
+            end = time.time()
+            self.logger.info(f"elapsed time checking MX record: {end - start}")
 
     def check_host(self, site):
         host = site['host']
@@ -52,6 +56,7 @@ class Monitor:
                 "185.199.110.153",
                 "185.199.111.153"
             ]
+        start = time.time()
         try:
             hostname, aliaslist, ip_addresses = socket.gethostbyname_ex(host)
             self.logger.info(f"hostname: {hostname} ip_addresses={ip_addresses}")
@@ -59,11 +64,13 @@ class Monitor:
                 self.save_error(f"Host {host} Expected IPS: {site['ips']}  received: {ip_addresses}")
         except Exception as err:
             self.save_error(f"Host {host} Expection {err} of type {err.__class__.__name__} received")
+        finally:
+            end = time.time()
+            self.logger.info(f"elapsed time checking IPS: {end - start}")
 
     def check_url(self, site):
         url = site["url"]
-        logger = self.logger
-        logger.info(f"URL: {url}")
+        self.logger.info(f"URL: {url}")
 
         start = time.time()
         try:
@@ -73,10 +80,10 @@ class Monitor:
             return
         finally:
             end = time.time()
-            logger.info(f"elaspsed time: {end - start}")
+            self.logger.info(f"elapsed time checking URL: {end - start}")
 
-        logger.info(f"status_code: {resp.status_code}")
-        logger.info(f"headers: {resp.headers}")
+        self.logger.info(f"status_code: {resp.status_code}")
+        self.logger.info(f"headers: {resp.headers}")
         if resp.status_code != site["status_code"]:
             self.save_error(f'URL {url} expected {site["status_code"]} received {resp.status_code}')
 
@@ -123,7 +130,7 @@ class Monitor:
 
         end_process = time.time()
 
-        self.logger.info(f"Elapsed time: {end_process - start_process}")
+        self.logger.info(f"Total elapsed time: {end_process - start_process}")
         self.logger.info(f"--------------------------")
         if self.errors:
             for error in self.errors:
