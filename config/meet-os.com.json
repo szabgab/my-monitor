@@ -1,10 +1,12 @@
 {
     "sites": [
         {
+            "enabled": false,
             "host": "meet-os.com",
             "ips": ["173.255.196.65"]
         },
         {
+            "enabled": false,
             "host": "www.meet-os.com",
             "ips": ["173.255.196.65"]
         },
@@ -15,6 +17,7 @@
             "url": "https://meet-os.com/"
         },
         {
+            "enabled": false,
             "headers": {
                 "Location": "https://meet-os.com/"
             },
@@ -22,6 +25,7 @@
             "url": "http://meet-os.com/"
         },
         {
+            "enabled": false,
             "headers": {
                 "Location": "https://meet-os.com/"
             },
