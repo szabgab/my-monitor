@@ -2,15 +2,11 @@
     "sites": [
         {
             "host": "perlmaven.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "www.perlmaven.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "meta.perlmaven.com",
@@ -153,14 +149,14 @@
             "url": "https://perlmaven.com/keywords"
         },
         {
-            "enabled": true,
+            "enabled": false,
             "html_contains": "<title>$</title>",
             "status_code": 200,
             "url": "https://perlmaven.com/search/%24"
         },
         {
             "enabled": true,
-            "html_contains": "<title>Perl Maven archive</title>",
+            "html_contains": "<title>Archive</title>",
             "status_code": 200,
             "url": "https://perlmaven.com/archive"
         },
