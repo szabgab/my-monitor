@@ -9,15 +9,11 @@
         },
         {
             "host": "code-maven.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "www.code-maven.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "hu.code-maven.com",
@@ -37,9 +33,7 @@
         },
         {
             "host": "meta.code-maven.com",
-            "ips": [
-                "173.255.196.65"
-            ]
+            "ips": "github"
         },
         {
             "host": "front.code-maven.com",
