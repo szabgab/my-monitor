@@ -37,7 +37,7 @@
         },
         {
             "headers": {
-                "Location": "https://code-maven.com/"
+                "Location": "https://pydigger.com/"
             },
             "status_code": 301,
             "url": "http://s7.hostlocal.com/"

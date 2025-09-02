@@ -13,12 +13,6 @@
             "ips": "github"
         },
         {
-            "host": "host.szabgab.com",
-            "ips": [
-                "173.255.196.65"
-            ]
-        },
-        {
             "enabled": false,
             "host": "find-alike.szabgab.com",
             "ips": [
@@ -77,12 +71,6 @@
             "html_contains": "<title>Index of Perl keywords</title>",
             "status_code": 200,
             "url": "https://szabgab.com/keywords"
-        },
-        {
-            "enabled": true,
-            "html_contains": "ok",
-            "status_code": 200,
-            "url": "http://host.szabgab.com/"
         },
         {
             "comment": "",
