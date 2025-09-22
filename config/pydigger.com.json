@@ -3,11 +3,13 @@
         {
             "html_contains": "<title>PyDigger - unearthing stuff about Python</title>",
             "status_code": 200,
+            "enabled": false,
             "url": "https://pydigger.com/"
         },
         {
             "html_contains": "<title>PyDigger - Statistics</title>",
             "status_code": 200,
+            "enabled": false,
             "url": "https://pydigger.com/stats"
         },
         {
@@ -33,6 +35,7 @@
                 "Location": "https://pydigger.com/"
             },
             "status_code": 301,
+            "enabled": false,
             "url": "http://www.pydigger.com/"
         }
     ]
