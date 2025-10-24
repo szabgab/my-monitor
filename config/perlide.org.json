@@ -35,7 +35,7 @@
         },
         {
             "enabled": true,
-            "html_contains": "<title>Perl Editor, Perl IDE</title>",
+            "html_contains": "<title>Perl IDE - Development Tools and Editors</title>",
             "status_code": 200,
             "url": "https://perlide.org/"
         },
