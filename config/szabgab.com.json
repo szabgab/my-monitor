@@ -56,7 +56,7 @@
          },
          {
             "enabled": true,
-            "html_contains": "<title>Gábor Szabó - Helping companies with Rust, Python, Perl, Git, and Docker</title>",
+            "html_contains": "<title>Helping teams move faster using Python, Rust, Perl, Git, and Docker</title>",
             "status_code": 200,
             "url": "https://szabgab.com/"
         },
