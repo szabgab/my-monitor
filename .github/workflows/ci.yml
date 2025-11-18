@@ -21,4 +21,4 @@ jobs:
             pip install -r requirements.txt
       - name: Monitor
         run: |
-            python monitor.py config/*.json
+            python monitor.py config/*.json config/*.yaml

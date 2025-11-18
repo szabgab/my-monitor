@@ -7,6 +7,7 @@ import socket
 import glob
 import sys
 import dns.resolver
+import yaml
 
 # TODO: check TXT and CNAME records as well. Monitor the whole DNS configuration?
 # TODO: Check IPv6 resolutions as well.
@@ -132,9 +133,15 @@ class Monitor:
             self.logger.info(f"Processing {filename}")
             try:
                 with open(filename) as fh:
-                    config = json.load(fh)
+                    if filename.endswith(".json"):
+                        config = json.load(fh)
+                    elif filename.endswith(".yaml"):
+                        config = yaml.load(fh, Loader=yaml.Loader)
+                    else:
+                        raise Exception(f"Invalid config file {filename}")
             except Exception as err:
                 self.save_error(f'Exception {err} while reading config file {filename}')
+                continue
             try:
                 for site in config["sites"]:
 
