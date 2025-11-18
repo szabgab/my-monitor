@@ -1,0 +1,134 @@
+sites:
+  - host: szabgab.com
+    ips: github
+  - host: www.szabgab.com
+    ips: github
+  - host: www.szabgab.com
+    ips: github
+  - host: find-alike.szabgab.com
+    enabled: false
+    ips:
+      - 104.248.229.11
+  - host: feed.szabgab.com
+    enabled: false
+    ips:
+      - 173.255.196.65
+
+  - url: http://szabgab.com/
+    status_code: 301
+    headers:
+      Location: https://szabgab.com/
+  - url: https://echar-lashon.szabgab.com/
+    status_code: 200
+    html_contains: "<title>Redirecting to https://kantoniko.com/echar-lashon</title>"
+  - url: http://echar-lashon.szabgab.com/
+    status_code: 301
+    headers:
+      Location: https://echar-lashon.szabgab.com/
+
+  - url: http://adserver.szabgab.com/
+    enabled: false
+    comment: "When accessing from home it is redirected to code-maven.com when accessing by GitHub Actions it is rediredcted to perlmaven.com"
+    status_code: 301
+    headers:
+      Location: https://code-maven.com/
+
+  - url: https://szabgab.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Helping teams move faster using Python, Rust, Perl, Git, and Docker</title>"
+
+  - url: https://szabgab.com/books
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Recommended Books</title>"
+
+
+  - url: https://szabgab.com/keywords
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Index of Perl keywords</title>"
+
+  - url: http://feed.szabgab.com/
+    enabled: false
+    status_code: 200
+    html_contains: "<li><a href=\"/feeds.html\">feeds</a></li>"
+
+  - url: "http://find-alike.szabgab.com/"
+    enabled: false
+    status_code: 301
+    headers:
+      Location: https://find-alike.szabgab.com/
+
+  - url: "https://find-alike.szabgab.com/"
+    enabled: false
+    status_code": 200
+    html_contains: "<title>FindMeMoreLike_HomePage</title>"
+
+  - url: http://www.szabgab.com/
+    status_code: 301
+    headers:
+       Location: https://szabgab.com/
+
+  - url: https://ariel.szabgab.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Some of my work can be found here: | Ariel Szabo</title>"
+
+  - url: http://mobile.szabgab.com/
+    enabled: false
+    comment: "Not in use"
+    status_code: 200
+    html_contains: "<title>MEB</title>"
+
+  - mx: "szabgab.com"
+    ips:
+      - mx1.forwardemail.net.
+      - mx2.forwardemail.net.
+
+  - url: https://github.szabgab.com/
+    comment: "GitHub pages"
+    status_code: 200
+    html_contains: "<title>GitHub Page of Gábor Szabó</title>"
+
+  - url: https://github.szabgab.com/hike-in-israel/
+    comment: "GitHub pages"
+    status_code: 200
+    html_contains: "<title>Hike in Israel</title>"
+
+  - url: https://games.szabgab.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Games</title>"
+
+  - url: https://ladino.szabgab.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Ladino - Judeo-Spanish | Ladino, the language of the Sepharadic Jews</title>"
+
+  - url: https://lili.szabgab.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>LibreLingo courses</title>"
+
+  - url: https://israel.szabgab.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>From Israel</title>"
+
+  - url: https://izrael.szabgab.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Magyarul Izraelből</title>"
+
+  - host: pti.szabgab.com
+    ips: github
+
+  - url: https://pti.szabgab.com/
+    status_code: 200
+    html_contains: "Python, Perl, and Linux Training Israel (PTI)"
+
+  - url: http://pti.szabgab.com/
+    status_code: 301
+    headers:
+      Location: https://pti.szabgab.com/
