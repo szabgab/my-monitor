@@ -2,11 +2,11 @@
     "sites": [
         {
             "ip": "173.255.196.65",
-            "reverse": "s7"
+            "reverse": "s7.hostlocal.com"
         },
         {
             "ip": "2600:3c00::f03c:91ff:fedf:456f",
-            "reverse": "s7"
+            "reverse": "s7.hostlocal.com"
         },
         {
             "comment": "Linode",
