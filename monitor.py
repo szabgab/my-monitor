@@ -45,6 +45,27 @@ class Monitor:
             end = time.time()
             self.logger.info(f"elapsed time checking MX record: {end - start}")
 
+    def check_reverse_ipv4(self, site):
+        ip = site['ipv4']
+        expected = site['reverse']
+        self.logger.info(f"IP: {ip}")
+
+        start = time.time()
+        try:
+            reversed_name = dns.reversename.from_address(ip)
+            answers = dns.resolver.resolve(reversed_name, 'PTR')
+            all = [str(rdata.target).rstrip('.') for rdata in answers]
+            assert len(all) == 1
+            self.logger.info(f"XXXXX '{reversed_name}' '{all[0]}'")
+            if all[0] != expected:
+                self.save_error(f"IP {ip} reverse lookup returned '{all[0]}' expected '{expected}'")
+        except Exception as err:
+            self.save_error(f"Host {ip} Exception {err} of type {err.__class__.__name__} received")
+        finally:
+            end = time.time()
+            self.logger.info(f"elapsed time checking IPS: {end - start}")
+
+
     def check_host(self, site):
         host = site['host']
         self.logger.info(f"Host: {host}")
@@ -121,6 +142,8 @@ class Monitor:
                         continue
                     if 'host' in site:
                         self.check_host(site)
+                    if 'ipv4' in site:
+                        self.check_reverse_ipv4(site)
                     if 'mx' in site:
                         self.check_mx(site)
                     if 'url' in site:
