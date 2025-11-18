@@ -1,0 +1,8 @@
+sites:
+  - host: www.tracert.com
+    ips:
+      - 127.0.0.1
+  - host: tracert.com
+    ips:
+      - 127.0.0.1
+
