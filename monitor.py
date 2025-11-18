@@ -45,8 +45,8 @@ class Monitor:
             end = time.time()
             self.logger.info(f"elapsed time checking MX record: {end - start}")
 
-    def check_reverse_ipv4(self, site):
-        ip = site['ipv4']
+    def check_reverse_dns(self, site):
+        ip = site['ip']
         expected = site['reverse']
         self.logger.info(f"IP: {ip}")
 
@@ -142,8 +142,8 @@ class Monitor:
                         continue
                     if 'host' in site:
                         self.check_host(site)
-                    if 'ipv4' in site:
-                        self.check_reverse_ipv4(site)
+                    if 'ip' in site:
+                        self.check_reverse_dns(site)
                     if 'mx' in site:
                         self.check_mx(site)
                     if 'url' in site:
