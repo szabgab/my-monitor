@@ -1,0 +1,16 @@
+sites:
+  - host: verele.com
+    ips: github
+  - host: www.verele.com
+    ips: github
+  - url: https://verele.com/
+    status_code: 200
+    html_contains: "<title>Yiddish &amp; Yoga in Yerushalayim</title>"
+  - url: http://verele.com/
+    status_code: 301
+    headers:
+      Location: https://verele.com/
+  - url: http://www.verele.com/
+    status_code: 301
+    headers:
+      Location: https://verele.com/
