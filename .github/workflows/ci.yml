@@ -11,7 +11,7 @@ jobs:
   build-in-container:
     runs-on: ubuntu-latest
     container:
-      image: python:3.7
+      image: python:3.14
     name: Run
     steps:
       - uses: actions/checkout@v5
