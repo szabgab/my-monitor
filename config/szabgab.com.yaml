@@ -132,3 +132,8 @@ sites:
     status_code: 301
     headers:
       Location: https://pti.szabgab.com/
+
+  - host: courses.szabgab.com
+    ips:
+      - 173.255.196.65
+
