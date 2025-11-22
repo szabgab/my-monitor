@@ -163,3 +163,11 @@ sites:
     comment: GitHub pages
     status_code: 200
     html_contains: "<title>OSDC | Open Source Development Course &amp; Community</title>"
+
+  - host: academy.code-maven.com
+    ips:
+      - 173.255.196.65
+  - host: akademia.code-maven.com
+    ips:
+      - 173.255.196.65
+

@@ -133,14 +133,4 @@ sites:
     headers:
       Location: https://pti.szabgab.com/
 
-  - host: courses.szabgab.com
-    enabled: false
-    ips:
-      - 173.255.196.65
-  - host: academy.code-maven.com
-    ips:
-      - 173.255.196.65
-  - host: akademia.code-maven.com
-    ips:
-      - 173.255.196.65
 
