@@ -1,0 +1,44 @@
+sites:
+  - host: lael.co.il
+    ips: github
+
+
+  - host: www.lael.co.il
+    ips: github
+
+  - host: www.shay.lael.co.il
+    enabled: false
+    comment: It seems box.co.il does not support subdomain DNS"
+    ips:
+      - 173.255.196.65
+
+
+  - host: shay.lael.co.il
+    ips:
+      - 45.147.251.233
+
+  - url: http://www.lael.co.il/
+    status_code: 301
+    headers:
+      Location: https://lael.co.il/
+
+
+  - url: http://lael.co.il/
+    status_code: 301
+    headers:
+      Location: https://lael.co.il/
+
+  - url: https://lael.co.il/
+    status_code: 200
+    html_contains: "<a href=\"https://shay.lael.co.il/\">Shay Lael Advocat</a>"
+
+
+  - url: https://shay.lael.co.il/
+    status_code: 200
+    html_contains: "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
+
+
+  - url: http://shay.lael.co.il/
+    status_code: 301
+    headers:
+      Location: https://shay.lael.co.il/
