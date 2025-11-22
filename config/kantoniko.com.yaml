@@ -1,0 +1,23 @@
+sites:
+  - host: kantoniko.com
+    ips: github
+
+  - url: https://kantoniko.com/
+    status_code: 200
+    html_contains: "<title>El kantoniko de Ladino</title>"
+
+  - url: http://kantoniko.com/
+    status_code: 301
+    headers:
+     Location: https://kantoniko.com/
+
+  - url: http://www.kantoniko.com/
+    status_code: 301
+    headers:
+     Location: https://kantoniko.com/
+
+  - mx: kantoniko.com
+    ips:
+      - mx1.forwardemail.net.
+      - mx2.forwardemail.net.
+
