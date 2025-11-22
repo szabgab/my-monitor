@@ -1,0 +1,165 @@
+sites:
+  - mx: code-maven.com
+    ips:
+      - mx1.forwardemail.net.
+      - mx2.forwardemail.net.
+
+  - host: code-maven.com
+    ips: github
+
+  - host: www.code-maven.com
+    ips: github
+
+  - host: hu.code-maven.com
+    ips: github
+
+  - host: he.code-maven.com
+    ips: github
+
+  - host: ru.code-maven.com
+    ips: github
+
+  - host: es.code-maven.com
+    ips: github
+
+  - host: meta.code-maven.com
+    ips: github
+
+  - host: front.code-maven.com
+    ips: github
+
+  - host: rust-he.code-maven.com
+    ips: github
+
+  - host: python-he.code-maven.com
+    ips: github
+
+  - url: https://code-maven.com/
+    status_code: 200
+    html_contains: "Welcome to the Code Maven!"
+
+  - url: https://slides.code-maven.com/
+    status_code: 200
+    html_contains": "<title>Code-Maven training courses</title>"
+
+  - url: https://front.code-maven.com/
+    status_code: 200
+    html_contains: "<title>Front-End Maven</title>"
+
+  - url: https://rust-he.code-maven.com/
+    status_code: 200
+    html_contains: "<title>תכנות ראסט בעברית - מביני קוד - מביני ראסט</title>"
+
+  - url: https://python-he.code-maven.com/
+    status_code: 200
+    html_contains: "<title>מביני קוד פייתון - מביני קוד - מביני פייתון</title>"
+
+  - url: https://he.code-maven.com/
+    status_code: 200
+    html_contains: "<title>מביני קוד בעברית - מביני קוד בעברית</title>"
+
+  - url: https://ru.code-maven.com/
+    status_code: 200
+    html_contains: "<title>Code Maven - for people who code</title>"
+
+  - url: https://hu.code-maven.com/
+    status_code: 200
+    html_contains: "<title>Code Maven - Magyarul</title>"
+
+  - url: https://es.code-maven.com/
+    status_code: 200
+    html_contains: "<title>Code Maven en Español con errores gramaticales</title>"
+
+  - url: http://code-maven.com/
+    status_code: 301
+    headers:
+       Location: https://code-maven.com/
+
+  - url: http://www.code-maven.com/
+    status_code: 301
+    headers:
+     Location: https://code-maven.com/
+
+  - url: http://he.code-maven.com/
+    status_code: 301
+    headers:
+     Location: https://he.code-maven.com/
+
+  - url: https://python.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Python Maven</title>"
+
+  - url: https://mdbooks.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>mdBooks - Public mdBooks</title>"
+
+  - url: https://workshops.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Code-Maven Workshops | Tell me and I forget. Teach me and I remember. Involve me and I learn.</title>"
+
+  - url: https://tech-talks.code-maven.com/
+    comment": GitHub pages
+    status_code: 200
+    html_contains: "<title>Annotated Tech Talks</title>"
+
+  - url: https://rust.code-maven.com/
+    status_code: 200
+    html_contains: "<title>Rust Maven</title>"
+
+  - url: https://banner-builder.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Banbu, the Banner Builder</title>"
+
+  - url: https://devops-workshops.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>DevOps Workshops in Israel | DevOps Workshops</title>"
+
+  - url: https://forem.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Forem-based sites</title>"
+
+  - url: https://github.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Code Maven</title>"
+
+  - url: https://rust-digger.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Rust Digger</title>"
+
+  - url: https://rustatic.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>rustatic</title>"
+
+  - url: https://site-checker.code-maven.com/
+    comment": GitHub pages
+    status_code: 200
+    html_contains: "<title>Site Checker</title>"
+
+  - url: https://rust-news.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Rust news</title>"
+
+  - url: https://ssg.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Code Maven Static Site Generator</title>"
+
+  - url: https://ruby-digger.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>Ruby Digger</title>"
+
+  - url: https://osdc.code-maven.com/
+    comment: GitHub pages
+    status_code: 200
+    html_contains: "<title>OSDC | Open Source Development Course &amp; Community</title>"
