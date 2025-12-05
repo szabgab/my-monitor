@@ -34,6 +34,7 @@ sites:
 
 
   - url: https://shay.lael.co.il/
+    enabled: false
     status_code: 200
     html_contains: "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
 
