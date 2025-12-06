@@ -1,0 +1,102 @@
+sites:
+  - host: perlmaven.com
+    ips: github
+  - host: www.perlmaven.com
+    ips: github
+  - host: meta.perlmaven.com
+    ips: github
+  - host: cn.perlmaven.com
+    ips: github
+  - host: ko.perlmaven.com
+    ips: github
+  - host: he.perlmaven.com
+    ips: github
+  - host: es.perlmaven.com
+    ips: github
+  - host: id.perlmaven.com
+    ips: github
+  - host: de.perlmaven.com
+    ips: github
+  - host: fr.perlmaven.com
+    ips: github
+  - host: it.perlmaven.com
+    ips: github
+  - host: pl.perlmaven.com
+    ips: github
+  - host: ru.perlmaven.com
+    ips: github
+  - host: br.perlmaven.com
+    ips: github
+
+  - url: https://perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven - for people who want to get the most out of programming in Perl</title>"
+  - url: https://cn.perlmaven.com/
+    enabled: false
+    status_code: 200
+    html_contains: "简单的添加和更新操作"
+  - url: https://cn.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven in Chinese</title>"
+  - url: https://id.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven in Indonesian</title>"
+  - url: https://de.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven - für Leute, die das meiste aus der Programmierung mit Perl herausholen wollen</title>"
+  - url: https://es.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven en Español</title>"
+  - url: https://fr.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven - pour ceux et celles qui veulent tirer le meilleur parti de la programmation en Perl</title>"
+  - url: https://it.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven in Italian</title>"
+  - url: https://ko.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven in Korean</title>"
+  - url: https://br.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven em Português (Br)</title>"
+  - url: https://ru.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven по-русски</title>"
+  - url: http://www.perlmaven.com/
+    status_code: 301
+    headers:
+      Location: https://perlmaven.com/
+  - url: http://perlmaven.com/
+    status_code: 301
+    headers:
+      Location: https://perlmaven.com/
+  - url: https://cpan-digger.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>CPAN Digger</title>"
+  - url: https://perlmaven.com/keywords
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl Maven - Keywords</title>"
+  - url: https://perlmaven.com/search/%24
+    enabled: false
+    status_code: 200
+    html_contains: "<title>$</title>"
+  - url: https://perlmaven.com/archive
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Archive</title>"
+  - url: https://meta.perlmaven.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Meta Perl Maven</title>"
