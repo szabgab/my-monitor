@@ -19,7 +19,8 @@ jobs:
 
       - uses: szabgab/monitor@v1.00
         with:
-          config:  config/*.json config/*.yaml
+          config: config/*.yaml
+          #config:  config/*.json config/*.yaml
 
 
 
