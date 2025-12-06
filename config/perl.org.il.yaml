@@ -1,0 +1,69 @@
+sites:
+  - host: perl.org.il
+    ips: github
+
+  - host: www.perl.org.il
+    ips: github
+
+  - host: mail.perl.org.il
+    enabled: false
+    ips:
+      - "50.116.59.34"
+
+  - host: act.perl.org.il
+    enabled: false
+    ips:
+      - "163.172.71.72"
+      
+  - mx: perl.org.il
+    ips:
+      - mx1.forwardemail.net.
+      - mx2.forwardemail.net.
+
+  - url: https://perl.org.il/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Israel.pm - Perl in Israel</title>"
+
+  - url: https://perl.org.il/YAPC/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>YAPC::Israel - Yet Another Perl Conference in Israel</title>"
+
+  - url: https://perl.org.il/YAPC/2005/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>YAPC::Israel::2005 - 3rd Perl Conference in Israel on 17 February, 2005</title>"
+
+  - url: https://perl.org.il/YAPC
+    status_code: 301
+    headers:
+      Location: https://perl.org.il/YAPC/
+
+  - url: http://perl.org.il/
+    status_code: 301
+    headers:
+      Location: https://perl.org.il/
+
+  - url: http://www.perl.org.il/
+    status_code: 301
+    headers:
+      Location: https://perl.org.il/
+
+  - url: http://act.perl.org.il/
+    enabled: false
+    status_code: 301
+    headers:
+      Location: http://act.perl.org.il/ilpw2013/
+
+  - url: http://act.perl.org.il/ilpw2013/
+    enabled: false
+    status_code: 200
+    html_contains: "Perl Workshop in Israel, 2013"
+
+  - url: http://mail.perl.org.il/
+    enabled: false
+    status_code: 301
+    headers:
+      Location: https://mail.perl.org.il/
+
