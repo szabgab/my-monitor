@@ -1,0 +1,32 @@
+sites:
+  - host: perlweekly.com
+    ips: github
+  - host: www.perlweekly.com
+    ips: github
+
+  - url: https://perlweekly.com/
+    status_code: 200
+    html_contains: "<title>Perl Weekly: A Free, Weekly Email Newsletter for the Perl Programming language</title>"
+
+  - url: http://perlweekly.com/
+    status_code: 301
+    headers:
+      Location: https://perlweekly.com/
+
+  - url: http://www.perlweekly.com/
+    status_code: 301
+    headers:
+      Location: https://perlweekly.com/
+
+  - url: http://mail.perlweekly.com/
+    enabled: false
+    status_code: 301
+    headers:
+      Location: https://mail.perlweekly.com/
+
+  - url: https://mail.perlweekly.com/
+    comment: "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate"
+    enabled: false
+    status_code: 301
+    headers:
+      Location: https://mail.perlweekly.com/mailman/listinfo
