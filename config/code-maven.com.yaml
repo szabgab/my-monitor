@@ -12,6 +12,11 @@ sites:
       - '"v=spf1 a mx include:spf.forwardemail.net include:hostlocal.com  include:_spf.google.com -all"'
       - '"yandex-verification: 41a94e0a64156cc1"'
 
+  - host: mail.code-maven.com
+    ips:
+      - 173.255.196.65
+
+
   - host: code-maven.com
     ips: github
 
