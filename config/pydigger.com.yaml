@@ -1,28 +1,35 @@
 sites:
   - host: pydigger.com
     ips: github
+
   - host: www.pydigger.com
     ips: github
+
   - url: https://pydigger.com/
     html_contains: "<title>PyDigger - unearthing stuff about Python</title>"
     status_code: 200
     enabled: false
+
   - url: https://pydigger.com/stats
     html_contains: "<title>PyDigger - Statistics</title>"
     status_code: 200
     enabled: false
+
   - url: https://pydigger.com/search/has-vcs-no-license
     html_contains: "<title>PyDigger - unearthing stuff about Python</title>"
     status_code: 200
     enabled: false
+
   - url: "https://pydigger.com/search/has-github"
     html_contains: "<title>PyDigger - unearthing stuff about Python</title>"
     status_code: 200
     enabled: false
+
   - url: https://pydigger.com/search/has-github-no-ci
     html_contains: "<title>PyDigger - unearthing stuff about Python</title>"
     status_code: 200
     enabled: false
+
   - url: http://www.pydigger.com/
     headers:
         Location: "https://pydigger.com/"
