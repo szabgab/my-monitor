@@ -38,7 +38,12 @@ sites:
   - url: http://s7.hostlocal.com/
     status_code: 301
     headers:
-      Location: https://code-maven.com/
+      Location: https://hostlocal.com/
+
+  - url: https://s6.hostlocal.com/
+    status_code: 200
+    html_contains: "<title>s7</title>"
+
 
   - url: https://mail.hostlocal.com/mailman/listinfo
     comment: "requests complains about SSL certificate"
