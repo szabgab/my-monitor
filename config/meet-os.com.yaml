@@ -1,0 +1,27 @@
+sites:
+  - host: meet-os.com
+    enabled: false
+    ips:
+      - "173.255.196.65"
+
+  - host: www.meet-os.com
+    enabled: false
+    ips:
+      - "173.255.196.65"
+
+  - url: https://meet-os.com/
+    enabled: false
+    status_code: 200
+    html_contains: "<title>Meet-OS</title>"
+
+  - url: http://meet-os.com/
+    enabled: false
+    status_code: 301
+    headers:
+      Location: https://meet-os.com/
+
+  - url: http://www.meet-os.com/
+    enabled: false
+    status_code: 301
+    headers:
+      Location: https://meet-os.com/
