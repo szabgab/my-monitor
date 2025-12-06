@@ -3,9 +3,9 @@ updates:
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      #interval: weekly
-      interval: cron
-      cronjob: "10 * * * *"
+      interval: daily
+      #interval: cron
+      #cronjob: "10 * * * *"
     groups:
       github-actions:
         patterns:
