@@ -5,7 +5,7 @@ updates:
     schedule:
       #interval: weekly
       interval: cron
-      cronjob: 42 * * * *
+      cronjob: "10 * * * *"
     groups:
       github-actions:
         patterns:

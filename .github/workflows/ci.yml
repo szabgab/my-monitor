@@ -15,7 +15,7 @@ jobs:
     name: Run
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - uses: szabgab/monitor@v1.01
         with:
