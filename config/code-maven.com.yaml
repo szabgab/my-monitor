@@ -179,3 +179,8 @@ sites:
     ips:
       - 173.255.196.65
 
+  - cname: academy.code-maven.com
+    expected:
+      - s7.hostlocal.com.
+
+
