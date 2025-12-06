@@ -1,0 +1,39 @@
+sites:
+  - host: perlide.org
+    ips: github
+  - host: www.perlide.org
+    ips: github
+  - host: padre.perlide.org
+    ips: github
+  - host: www.padre.perlide.org
+    enabled: false
+    ips:
+      - "173.255.196.65"
+
+  - url: https://padre.perlide.org/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Padre, the Perl IDE</title>"
+
+  - url: http://padre.perlide.org/
+    enabled: true
+    status_code: 301
+    headers:
+      Location: https://padre.perlide.org/
+
+  - url: https://perlide.org/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Perl IDE - Development Tools and Editors</title>"
+
+  - url: https://www.perlide.org/
+    enabled: true
+    status_code: 301
+    headers:
+      Location: https://perlide.org/
+      
+  - url: http://www.padre.perlide.org/
+    enabled: false
+    status_code: 301
+    headers:
+      Location: https://padre.perlide.org/
