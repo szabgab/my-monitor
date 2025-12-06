@@ -1,0 +1,56 @@
+sites:
+  - ip: "173.255.196.65"
+    reverse: s7.hostlocal.com
+
+  - ip: "2600:3c00::f03c:91ff:fedf:456f"
+    reverse: s7.hostlocal.com
+
+  - host: s7.hostlocal.com
+    comment: Linode
+    ips:
+      - "173.255.196.65"
+
+  - mx: code-maven.com
+    ips:
+      - mx1.forwardemail.net.
+      - mx2.forwardemail.net.
+      
+  - host: hostlocal.com
+    ips: github
+
+  - host: www.hostlocal.com
+    ips: github
+
+  - url: https://hostlocal.com/
+    enabled: true
+    status_code: 200
+    html_contains: "<title>Host Local Training courses for Rust and Python</title>"
+
+  - url: http://hostlocal.com/
+    status_code: 301
+    headers:
+      Location: https://hostlocal.com/
+
+  - url: http://www.hostlocal.com/
+    status_code: 301
+    headers:
+      Location: https://hostlocal.com/
+
+  - url: http://s7.hostlocal.com/
+    status_code: 301
+    headers:
+      Location: https://code-maven.com/
+
+  - url: https://mail.hostlocal.com/mailman/listinfo
+    comment: "requests complains about SSL certificate"
+    enabled: false
+    status_code: 200
+    html_contains: "<TITLE>mail.hostlocal.com Mailing Lists</TITLE>"
+
+  - url: https://mail.hostlocal.com/
+    comment: "requests complains about SSL certificate"
+    enabled: false
+    status_code: 301
+    headers:
+      Location: https://mail.hostlocal.com/mailman/listinfo
+
