@@ -4,6 +4,14 @@ sites:
       - mx1.forwardemail.net.
       - mx2.forwardemail.net.
 
+  - txt: code-maven.com
+    expected:
+      - '"forward-email-site-verification=SnmIZpfHVE"'
+      - '"google-site-verification=T_jr0QD177KM2rhluOJixKQYW5lMEsd-XdJkzLRl5wA"'
+      - '"google-site-verification=r-n2kvxLVmsVy-U2Ab849C-Q1phWC0vmWiLw_rVl7sc"'
+      - '"v=spf1 a mx include:spf.forwardemail.net include:hostlocal.com  include:_spf.google.com -all"'
+      - '"yandex-verification: 41a94e0a64156cc1"'
+
   - host: code-maven.com
     ips: github
 
