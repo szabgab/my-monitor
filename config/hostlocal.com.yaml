@@ -4,12 +4,12 @@ sites:
     ips:
       - "173.255.196.65"
 
-  - mx: code-maven.com
+  - mx: hostlocal.com
     ips:
       - mx1.forwardemail.net.
       - mx2.forwardemail.net.
 
-  - txt: code-maven.com
+  - txt: hostlocal.com
     expected:
       - '"v=spf1 a mx include:spf.forwardemail.net include:hostlocal.com  include:_spf.google.com -all"'
       - '"forward-email-site-verification=3gnVe9O6Sk"'
