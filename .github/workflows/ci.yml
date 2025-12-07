@@ -15,9 +15,9 @@ jobs:
     name: Run
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - uses: szabgab/monitor@v1.01
+      - uses: szabgab/monitor@v1.03
         with:
           config: config/*.yaml
           #config:  config/*.json config/*.yaml
