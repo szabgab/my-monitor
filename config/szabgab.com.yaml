@@ -14,6 +14,11 @@ sites:
     ips:
       - 173.255.196.65
 
+  - txt: _dmarc.szabgab.com
+    enabled: true
+    expected:
+      - '"v=DMARC1; p=none;"'
+
   - url: http://szabgab.com/
     status_code: 301
     headers:
