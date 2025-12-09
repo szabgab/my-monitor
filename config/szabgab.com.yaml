@@ -14,6 +14,14 @@ sites:
     ips:
       - 173.255.196.65
 
+  - txt: "szabgab.com"
+    enabled: true
+    expected:
+      - '"github-verification=JG929vgmZnquZG2rQJ4R8ZhRhhrYax4KTfSNIPPY"'
+      - '"forward-email-site-verification=zffRBEqkH0"'
+      - '"google-site-verification=T_jr0QD177KM2rhluOJixKQYW5lMEsd-XdJkzLRl5wA"'
+      - '"v=spf1 include:hostlocal.com -all"'
+
   - mx: "szabgab.com"
     ips:
       - mx1.forwardemail.net.
