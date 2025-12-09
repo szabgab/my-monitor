@@ -1,18 +1,25 @@
 sites:
   - host: szabgab.com
     ips: github
+
   - host: www.szabgab.com
     ips: github
+
   - host: www.szabgab.com
     ips: github
+
   - host: find-alike.szabgab.com
     enabled: false
     ips:
       - 104.248.229.11
+
   - host: feed.szabgab.com
     enabled: false
     ips:
       - 173.255.196.65
+
+  - host: pti.szabgab.com
+    ips: github
 
   - txt: "szabgab.com"
     enabled: true
@@ -27,14 +34,12 @@ sites:
       - mx1.forwardemail.net.
       - mx2.forwardemail.net.
 
-
   - txt: _dmarc.szabgab.com
     enabled: true
     expected:
-      - '"v=DMARC1; p=none;"'
+      - '"v=DMARC1; p=quarantine;"'
 
-  - host: pti.szabgab.com
-    ips: github
+# http-requests
 
   - url: http://szabgab.com/
     status_code: 301

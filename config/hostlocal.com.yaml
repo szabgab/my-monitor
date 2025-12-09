@@ -4,6 +4,12 @@ sites:
     ips:
       - "173.255.196.65"
 
+  - host: hostlocal.com
+    ips: github
+
+  - host: www.hostlocal.com
+    ips: github
+
   - mx: hostlocal.com
     ips:
       - mx1.forwardemail.net.
@@ -15,11 +21,12 @@ sites:
       - '"v=spf1 a:s1.hostlocal.com a:s7.hostlocal.com include:spf.forwardemail.net include:sendgrid.net include:_spf.google.com -all"'
       - '"forward-email-site-verification=3gnVe9O6Sk"'
 
-  - host: hostlocal.com
-    ips: github
+  - txt: _dmarc.hostlocal.com
+    enabled: true
+    expected:
+      - '"v=DMARC1; p=quarantine;"'
 
-  - host: www.hostlocal.com
-    ips: github
+# http-requests
 
   - url: https://hostlocal.com/
     enabled: true
