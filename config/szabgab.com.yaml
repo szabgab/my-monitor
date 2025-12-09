@@ -14,18 +14,29 @@ sites:
     ips:
       - 173.255.196.65
 
+  - mx: "szabgab.com"
+    ips:
+      - mx1.forwardemail.net.
+      - mx2.forwardemail.net.
+
+
   - txt: _dmarc.szabgab.com
     enabled: true
     expected:
       - '"v=DMARC1; p=none;"'
 
+  - host: pti.szabgab.com
+    ips: github
+
   - url: http://szabgab.com/
     status_code: 301
     headers:
       Location: https://szabgab.com/
+
   - url: https://echar-lashon.szabgab.com/
     status_code: 200
     html_contains: "<title>Redirecting to https://kantoniko.com/echar-lashon</title>"
+
   - url: http://echar-lashon.szabgab.com/
     status_code: 301
     headers:
@@ -47,7 +58,6 @@ sites:
     enabled: true
     status_code: 200
     html_contains: "<title>Recommended Books</title>"
-
 
   - url: https://szabgab.com/keywords
     enabled: true
@@ -86,11 +96,6 @@ sites:
     status_code: 200
     html_contains: "<title>MEB</title>"
 
-  - mx: "szabgab.com"
-    ips:
-      - mx1.forwardemail.net.
-      - mx2.forwardemail.net.
-
   - url: https://github.szabgab.com/
     comment: "GitHub pages"
     status_code: 200
@@ -125,9 +130,6 @@ sites:
     enabled: true
     status_code: 200
     html_contains: "<title>Magyarul Izraelből</title>"
-
-  - host: pti.szabgab.com
-    ips: github
 
   - url: https://pti.szabgab.com/
     status_code: 200
