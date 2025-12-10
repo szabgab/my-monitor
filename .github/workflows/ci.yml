@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - uses: szabgab/monitor@v1.03
+      - uses: szabgab/monitor@v1.04
         with:
           config: config/*.yaml
           #config:  config/*.json config/*.yaml
