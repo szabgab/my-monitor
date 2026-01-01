@@ -33,13 +33,14 @@ sites:
     html_contains: "<a href=\"https://shay.lael.co.il/\">Shay Lael Advocat</a>"
 
 
-  - url: https://shay.lael.co.il/
-    enabled: false
-    status_code: 200
-    html_contains: "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
+#  - url: https://shay.lael.co.il/
+#    enabled: false
+#    status_code: 200
+#    html_contains: "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
+#
+#
+#  - url: http://shay.lael.co.il/
+#    status_code: 301
+#    headers:
+#      Location: https://shay.lael.co.il/
 
-
-  - url: http://shay.lael.co.il/
-    status_code: 301
-    headers:
-      Location: https://shay.lael.co.il/
