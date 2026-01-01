@@ -6,16 +6,16 @@ sites:
   - host: www.lael.co.il
     ips: github
 
-  - host: www.shay.lael.co.il
-    enabled: false
-    comment: It seems box.co.il does not support subdomain DNS"
-    ips:
-      - 173.255.196.65
-
-
-  - host: shay.lael.co.il
-    ips:
-      - 45.147.251.233
+#  - host: www.shay.lael.co.il
+#    enabled: false
+#    comment: It seems box.co.il does not support subdomain DNS"
+#    ips:
+#      - 173.255.196.65
+#
+#
+#  - host: shay.lael.co.il
+#    ips:
+#      - 45.147.251.233
 
   - url: http://www.lael.co.il/
     status_code: 301
