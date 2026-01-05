@@ -13,9 +13,9 @@ sites:
 #      - 173.255.196.65
 #
 #
-#  - host: shay.lael.co.il
-#    ips:
-#      - 45.147.251.233
+  - host: shay.lael.co.il
+    ips:
+      - 185.60.171.122
 
   - url: http://www.lael.co.il/
     status_code: 301
@@ -39,8 +39,13 @@ sites:
 #    html_contains: "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
 #
 #
-#  - url: http://shay.lael.co.il/
-#    status_code: 301
-#    headers:
-#      Location: https://shay.lael.co.il/
+  - url: http://shay.lael.co.il/
+    status_code: 301
+    headers:
+      Location: https://shay.lael.co.il/
+
+  - url: https://shay.lael.co.il/
+    status_code: 200
+    html_contains: "<title>עורך דין שי לאל | עורך דין שי לאל</title>"
+
 
