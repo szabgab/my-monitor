@@ -175,7 +175,7 @@ sites:
   - url: https://osdc.code-maven.com/
     comment: GitHub pages
     status_code: 200
-    html_contains: "<title>OSDC | Open Source Development [Course Community Conference Company]</title>"
+    html_contains: "<title>OSDC | Open Source Development [Course Community Conference Club]</title>"
 
   - host: academy.code-maven.com
     ips:
