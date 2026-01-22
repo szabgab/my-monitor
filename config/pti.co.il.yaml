@@ -1,18 +1,22 @@
 sites:
   - host: pti.co.il
+    enabled: false
     ips:
       - 173.255.196.65
 
   - host: www.pti.co.il
+    enabled: false
     ips:
       - 173.255.196.65
 
   - url: http://pti.co.il/
+    enabled: false
     status_code: 301
     headers:
       Location: https://pti.szabgab.com/
 
   - url: http://www.pti.co.il/
+    enabled: false
     status_code: 301
     headers:
       Location: https://pti.szabgab.com/
