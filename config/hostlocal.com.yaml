@@ -4,6 +4,11 @@ sites:
     ips:
       - "173.255.196.65"
 
+  - host: s1.hostlocal.com
+    comment: Linode
+    ips:
+      - "72.14.179.58"
+
   - host: hostlocal.com
     ips: github
 
