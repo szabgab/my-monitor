@@ -179,13 +179,13 @@ sites:
 
   - host: academy.code-maven.com
     ips:
-      - 173.255.196.65
+      - 72.14.179.58
   - host: akademia.code-maven.com
     ips:
-      - 173.255.196.65
+      - 72.14.179.58
 
   - cname: academy.code-maven.com
     expected:
-      - s7.hostlocal.com.
+      - s1.hostlocal.com.
 
 
