@@ -188,4 +188,15 @@ sites:
     expected:
       - s1.hostlocal.com.
 
+  - url: https://academy.code-maven.com/
+    comment: s1
+    status_code: 200
+    html_contains: "<title>Academy</title>"
+
+  - url: https://akademia.code-maven.com/
+    comment: s1
+    status_code: 200
+    html_contains: "<title>אקדמיה</title>"
+
+
 
