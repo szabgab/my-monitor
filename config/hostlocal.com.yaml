@@ -50,13 +50,13 @@ sites:
       Location: https://hostlocal.com/
 
   - url: http://s7.hostlocal.com/
-    enable: false
+    enabled: false
     status_code: 301
     headers:
       Location: https://s7.hostlocal.com/
 
   - url: https://s7.hostlocal.com/
-    enable: false
+    enabled: false
     status_code: 200
     html_contains: "<title>s7</title>"
 
