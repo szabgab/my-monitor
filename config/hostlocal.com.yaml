@@ -1,5 +1,6 @@
 sites:
   - host: s7.hostlocal.com
+    enabled: false
     comment: Linode
     ips:
       - "173.255.196.65"
@@ -23,7 +24,7 @@ sites:
   - txt: hostlocal.com
     enabled: true
     expected:
-      - '"v=spf1 a:s1.hostlocal.com a:s7.hostlocal.com include:spf.forwardemail.net include:sendgrid.net include:_spf.google.com -all"'
+      - '"v=spf1 a:s1.hostlocal.com include:spf.forwardemail.net include:sendgrid.net include:_spf.google.com -all"'
       - '"forward-email-site-verification=3gnVe9O6Sk"'
 
   - txt: _dmarc.hostlocal.com
@@ -49,11 +50,13 @@ sites:
       Location: https://hostlocal.com/
 
   - url: http://s7.hostlocal.com/
+    enable: false
     status_code: 301
     headers:
       Location: https://s7.hostlocal.com/
 
   - url: https://s7.hostlocal.com/
+    enable: false
     status_code: 200
     html_contains: "<title>s7</title>"
 
