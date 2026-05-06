@@ -145,7 +145,7 @@ sites:
   - url: https://rust-digger.code-maven.com/
     comment: GitHub pages
     status_code: 200
-    html_contains: "<title>Rust Digger</title>"
+    html_contains: "<title>rust-digger</title>"
 
   - url: https://rustatic.code-maven.com/
     comment: GitHub pages
