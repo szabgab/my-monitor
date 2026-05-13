@@ -198,5 +198,13 @@ sites:
     status_code: 200
     html_contains: "<title>אקדמיה</title>"
 
+  - url: https://groovy.code-maven.com/
+    status_code: 200
+    html_contains: "<title>Home - Groovy Maven</title>"
+
+  - url: https://falkordb.code-maven.com/
+    status_code: 200
+    html_contains: "<title>FalkorDB - FalkorDB</title>"
+
 
 
