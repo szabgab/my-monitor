@@ -208,7 +208,7 @@ sites:
 
   - url: https://falkordb-shell.code-maven.com/
     status_code: 200
-    html_contains: "<title>FalkorDB Shell 0.1.2</title>"
+    html_contains: "<title>FalkorDB Shell</title>"
 
   - url: https://exercises.code-maven.com/
     status_code: 200
