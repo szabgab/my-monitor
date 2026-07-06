@@ -16,8 +16,19 @@ sites:
     headers:
      Location: https://kantoniko.com/
 
+  - url: https://whatsapeando.kantoniko.com/
+    status_code: 200
+    html_contains: "<title>Estamos Whatsapeando | ladino-estamos-whatsapeando</title>"
+
+  - url: https://ufad.kantoniko.com/
+    status_code: 200
+    html_contains: "<title>ladino-una-fraza-al-diya</title>"
+
   - mx: kantoniko.com
     ips:
       - mx1.forwardemail.net.
       - mx2.forwardemail.net.
 
+#      https://audio.kantoniko.com/
+#      https://ladinadores.kantoniko.com/
+#
