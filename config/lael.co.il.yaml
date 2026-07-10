@@ -15,7 +15,7 @@ sites:
 #
   - host: shay.lael.co.il
     ips:
-      - 185.60.171.122
+      - 81.218.79.241
 
   - url: http://www.lael.co.il/
     status_code: 301
