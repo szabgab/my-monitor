@@ -220,6 +220,6 @@ sites:
 
   - url: https://events.code-maven.com/
     status_code: 200
-    html_contains: "<title>Virtual Events</title>"
+    html_contains: "<title>All Upcoming Events</title>"
 
 
