@@ -216,7 +216,7 @@ sites:
 
   - url: https://live.code-maven.com/
     status_code: 200
-    html_contains: "<title>Code-Maven Live events | Virtual presentations, Zoominars</title>"
+    html_contains: "<title>Code-Maven Live events | Code-Maven community online events</title>"
 
   - url: https://events.code-maven.com/
     status_code: 200
